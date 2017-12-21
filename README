@@ -1,0 +1,42 @@
+This file contains the information on how to run the Project Demos. It is only compatible with Linux-x64 machines.
+
+Installation Steps :
+
+Step 1: Install Java (1.4 or 1.5) 
+https://stackoverflow.com/questions/22489398/unsupported-major-minor-version-52-0
+
+Step 2 : Install Python (2.7 or older)
+
+Step 3 : Install BuDDy ( A BDD package)  
+
+Step 4 : Checkout this branch. It already has all the required classes compiled.
+
+
+To run a demo :
+
+GO to “PQL-0.2/bin/ProjectDemos” folder and call sudo ./{$demoName} 
+
+Demos Available :
+
+Non_recursive_injection.sh : This is demo for  the non-recursive sql injection to the code. 
+
+Input_stream.sh : This is the demo for memory leak in the code
+
+Recursive.sh : This demo is about the recursive wrapping in the code.
+
+Final_sql.sh: This is the complete demo of the SQL inject . It also includes the generation of the datalog from the PQL. 
+
+
+Output Folder:
+
+It contains the pre-generated output for each of the above demos.
+
+Non_recursive_injection.txt : This is the output log (print stack) for the sql. The main java class used for demo file use is : sample.Test (PQL-0.2/examples/sample/Test.java)
+
+Recursive.txt: This is the output log file for the recursive code where a wrapper is placed around another wrapper. The main java class demo file used is : sample.Sample (PQL-0.2/examples/sample/Sample.java)
+
+File_pointer_leakes.txt : This is the output log for the memory leak cases. The main java class used for demo is : sample.Sample1 (PQL-0.2/examples/sample/Sample1.java)
+
+CompleteSQL_including_datalog.txt : This is the output log file for the complete sql injection . It even contains the logs for  Datalog conversion from PQL. The main java class demo file used is : sample.CompleteSql (PQL-0.2/examples/sample/CompleteSql.java)
+
+
