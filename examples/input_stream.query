@@ -1,0 +1,8 @@
+query main()
+  uses object java.io.InputStream in; 
+within _._();
+matches {
+        in = new java.io.FileInputStream(...);
+	~in.close();
+}
+executes net.sf.pql.matcher.Util.printStackTrace(*);

@@ -1,0 +1,26 @@
+query main ()
+uses
+  object java.lang.String source, tainted;
+  object sample.SystemCriticalSink scs;
+matches {
+	source = sample.UserControlledType.get(...);
+	tainted := derivedString (source);
+}
+replaces scs.use(tainted) with sample.QuoteQuoter.safeUse (source, tainted, scs);
+
+/* This will track derived strings that are built using String
+   concatenation with the + operator, but not much else.  It will
+   work with both Java 1.4 and 1.5 (which use different types for
+   this). */
+
+query derivedString (object * x)
+returns object * y;
+uses object * temp;
+matches {
+    y := x
+  | { temp.append(x); y := derivedString(temp); }
+  | { temp = x.toString(); y := derivedString(temp); }
+  | { temp = new java.lang.StringBuffer(x); y := derivedString(temp); }
+  | { temp = new java.lang.StringBuilder(x); y := derivedString(temp); }
+}
+

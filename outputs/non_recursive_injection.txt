@@ -1,0 +1,54 @@
+Query main State machine:
+  -> Nodes: [Node 0, Node 1, Node 2]
+  -> Terminals: [Node 2]
+  -> Edge from Node 0 to Node 1: Invoke get: [Status: Value 0 has type java.lang.String , Status: Value 0 has reference to source , Status: Argument 0 has type sample.UserProvidedQuery ]
+  -> Edge from Node 1 to Node 2: Invoke use: [Status: Argument 0 has type sample.DummySql , Status: Argument 1 has type java.lang.String , Status: Argument 1 has reference to source , Status: Arg List 1 has length  ]
+
+
+Jar 1/1: /home/ubuntu/PQL-0.2/examples/sample/javabdd_0.1.jar
+Could not analyze NQueens.main([Ljava/lang/String;)V
+Class 1/9: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter$Range.class
+Could not analyze sample.QuoteQuoter$Range.<init>(II)V
+Class 2/9: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter.class
+Could not analyze sample.QuoteQuoter.<init>()V
+Could not analyze sample.QuoteQuoter.safeUse([Ljava/lang/String;[Ljava/lang/String;[Lsample/SystemCriticalSink;)V
+Class 3/9: /home/ubuntu/PQL-0.2/examples/sample/Test.class
+Could not analyze sample.Test.<init>()V
+Could not analyze sample.Test.main([Ljava/lang/String;)V
+Could not analyze sample.Test.<clinit>()V
+Class 4/9: /home/ubuntu/PQL-0.2/examples/sample/DummySql.class
+Could not analyze sample.DummySql.<init>()V
+Class 5/9: /home/ubuntu/PQL-0.2/examples/sample/UserControlledType.class
+Could not analyze sample.UserControlledType.<init>(Z)V
+Could not analyze sample.UserControlledType.get(Ljava/lang/String;)Ljava/lang/String;
+Class 6/9: /home/ubuntu/PQL-0.2/examples/sample/Sample.class
+Could not analyze sample.Sample.<init>()V
+Could not analyze sample.Sample.main([Ljava/lang/String;)V
+Could not analyze sample.Sample.<clinit>()V
+Class 7/9: /home/ubuntu/PQL-0.2/examples/sample/UserProvidedQuery.class
+Could not analyze sample.UserProvidedQuery.<init>(Z)V
+Class 8/9: /home/ubuntu/PQL-0.2/examples/sample/SystemCriticalSink.class
+Could not analyze sample.SystemCriticalSink.<init>()V
+Class 9/9: /home/ubuntu/PQL-0.2/examples/sample/Sample1.class
+Could not analyze sample.Sample1.<init>()V
+16 methods could not pass JustIce.
+Base:     3 classes, 3 methods, 12 points, 12 directives.
+Source directory: /home/ubuntu/PQL-0.2/examples/sample
+Destination directory: /home/ubuntu/PQL-0.2/examples/inst/sample
+Mirroring original application...
+IO Error while instrumenting: 
+java.io.FileNotFoundException: /home/ubuntu/PQL-0.2/examples/inst/sample/Sample.java (Permission denied)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:131)
+	at net.sf.pql.util.DiskUtils.copyFile(DiskUtils.java:99)
+	at net.sf.pql.util.DiskUtils.copyTree(DiskUtils.java:121)
+	at net.sf.pql.instrumenter.Mirror.mirror(Mirror.java:224)
+	at net.sf.pql.Prepare.main(Prepare.java:111)
+Simple Non-recursive detection of SQL-Injection:
+
+SUBSYSTEM RECEIVES:
+SELECT * FROM DB
+Match achieved: {source=Obj:java.lang.String@9519074}
+	at sample.Test.main(Test.java:11)
+Final match count: 1

@@ -1,0 +1,4 @@
+<sample.UserControlledType>
+get(Ljava/lang/String;)Ljava/lang/String;: 52M4[0,1] 56M4[0,1] 61M4[0,1] 65M4[0,1] 70M4[0,1] 73M6[r,0]
+<sample.Sample>
+main([Ljava/lang/String;)V: 60M4[0,1] 66M0[r,r,0] 69M4[0,1] 74M4[0,1] 80M0[r,r,0] 83M4[0,1] 88M4[0,1] 91M6[r,0] 94M2[0,1,1] 123M4[0,1] 129M0[r,r,0] 132M4[0,1] 137M4[0,1] 143M0[r,r,0] 146M4[0,1] 151M4[0,1] 154M6[r,0] 157M2[0,1,1]

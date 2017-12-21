@@ -1,0 +1,1600 @@
+base classpath directories: ['.']
+Deleting directory results/
+Generating relations...
+java -cp ".:../bin/PQL-0.2.jar:." -Xmx1024m -Dpa.dumppath=results/ -Dpa.specialmapinfo=yes -Dpa.dumpunmunged=yes -Dpa.signaturesinlocs=yes joeq.Main.GenRelations sample.CompleteSql
+Discovering call graph first...
+Adding default static variables.
+Using variable ordering C_N_F_I_I2_M2_M_Z_V2xV1_T1_H2_T2_H1_STR
+Start reordering
+Garbage collection #1: 2500009 nodes / 2499326 free / 0.047s / 0.047s total
+End reordering. Went from 683 to 683 nodes, gain = 0% (0.286 sec)
+Time spent initializing: 0.211
+Discovering call graph, iteration 1: 11 methods.
+Discovering call graph, iteration 2: 26 methods.
+Discovering call graph, iteration 3: 36 methods.
+Discovering call graph, iteration 4: 46 methods.
+Discovering call graph, iteration 5: 59 methods.
+Discovering call graph, iteration 6: 74 methods.
+warning: excluding UnknownTypeNode java.lang.Object* from hT: H1(138)
+warning: excluding UnknownTypeNode java.lang.Class* from hT: H1(139)
+Discovering call graph, iteration 7: 80 methods.
+Discovering call graph, iteration 8: 87 methods.
+Discovering call graph, iteration 9: 107 methods.
+Discovering call graph, iteration 10: 132 methods.
+Discovering call graph, iteration 11: 180 methods.
+Discovering call graph, iteration 12: 223 methods.
+Discovering call graph, iteration 13: 294 methods.
+Discovering call graph, iteration 14: 339 methods.
+Discovering call graph, iteration 15: 396 methods.
+Discovering call graph, iteration 16: 463 methods.
+Discovering call graph, iteration 17: 536 methods.
+Discovering call graph, iteration 18: 604 methods.
+Discovering call graph, iteration 19: 679 methods.
+Garbage collection #2: 2500009 nodes / 2251232 free / 0.076s / 0.123s total
+Discovering call graph, iteration 20: 812 methods.
+Discovering call graph, iteration 21: 951 methods.
+Discovering call graph, iteration 22: 1058 methods.
+Discovering call graph, iteration 23: 1115 methods.
+Discovering call graph, iteration 24: 1166 methods.
+Discovering call graph, iteration 25: 1184 methods.
+Discovering call graph, iteration 26: 1192 methods.
+Discovering call graph, iteration 27: 1194 methods.
+Discovering call graph, iteration 28: 1198 methods.
+Discovering call graph, iteration 29: 1200 methods.
+Discovering call graph, iteration 30: 1202 methods.
+Discovering call graph, iteration 31: 1203 methods.
+Discovering call graph, iteration 32: 1203 methods.
+Time spent solving: 6.352
+V = 10164, bits = 14
+I = 3581, bits = 12
+H = 2236, bits = 12
+F = 560, bits = 10
+T = 323, bits = 9
+N = 175, bits = 8
+M = 1430, bits = 11
+C = 283, bits = 9
+Writing call graph...
+Time spent writing: 0.308
+Finished discovering call graph.
+Loading initial call graph...done. (0.488 seconds)
+Adding default static variables.
+Counting size of call graph...
+Methods=1192 Bytecodes=76352 Call sites=28648
+Vars=10181 Heaps=2371 Classes=310 Fields=520
+ V=14 I=15 H=12 F=10 T=9 N=15 M=12 VC=0
+done. (0.011 seconds)
+Using variable ordering C_N_F_I_I2_M2_M_Z_V2xV1_T1_H2_T2_H1_STR
+Start reordering
+Garbage collection #1: 2500009 nodes / 2499473 free / 0.023s / 0.023s total
+End reordering. Went from 536 to 536 nodes, gain = 0% (0.134 sec)
+Calculating call graph relation...done. (0.3 seconds)
+Time spent initializing: 0.742
+warning: excluding UnknownTypeNode java.lang.Object* from hT: H1(1489)
+warning: excluding UnknownTypeNode java.lang.Class* from hT: H1(1499)
+Dumping to path results/
+Dump took 0.674s
+
+java -mx100m -Dbasedir=results/ -Dresultdir=results/ -Dpa.discovercallgraph=yes -cp ".:../bin/PQL-0.2.jar:." net.sf.bddbddb.BuildEquivalenceRelation H0 H0 heap.map I0 invoke.map
+Initializing BDD library (500000 nodes, cache size 125000, min free 0.2%)
+Using BDD library BuDDy - release 2.4 rev432
+WARNING: Cannot load mapfile "results/class.map", skipping.
+Domains: {Z=Z, I=I, M=M, STR=STR, VC=VC, F=F, H=H, C=C, T=T, N=N, HC=HC, V=V}
+H0 [0..2236] corresponds to H0[0..2236]
+Result: 12 nodes
+Garbage collection #1: 1009 nodes / 170 free / 0.0s / 0.0s total
+Resizing node table from 1009 to 2017
+Garbage collection #2: 2017 nodes / 293 free / 0.0s /WARNING: Cannot load mapfile "./results/class.map", skipping.
+Garbage collection #1: 1009 nodes / 411 free / 0.0010s / 0.0010s total
+Exception in thread "main" net.sf.javabdd.BDDException: Number of bits requested (7) is larger than domain sizes 1,1
+	at net.sf.javabdd.BDDDomain.buildAdd(BDDDomain.java:126)
+	at net.sf.bddbddb.NumberingRule.buildMap(NumberingRule.java:232)
+	at net.sf.bddbddb.NumberingRule.update(NumberingRule.java:173)
+	at net.sf.bddbddb.ir.BDDInterpreter.interpret(BDDInterpreter.java:70)
+	at net.sf.bddbddb.ir.BDDInterpreter.interpret(BDDInterpreter.java:50)
+	at net.sf.bddbddb.BDDSolver.solve(BDDSolver.java:395)
+	at net.sf.bddbddb.Solver.run(Solver.java:388)
+	at net.sf.bddbddb.Solver.main2(Solver.java:441)
+	at net.sf.bddbddb.Solver.main(Solver.java:1108)
+ 0.0010s total
+Resizing node table from 2017 to 4027
+Garbage collection #3: 4027 nodes / 1161 free / 0.0s / 0.0020s total
+Garbage collection #4: 4027 nodes / 0 free / 0.0s / 0.0020s total
+Resizing node table from 4027 to 8053
+Garbage collection #5: 8053 nodes / 1542 free / 0.0s / 0.0030s total
+Resizing node table from 8053 to 16103
+Garbage collection #6: 16103 nodes / 3079 free / 0.0010s / 0.0040s total
+Resizing node table from 16103 to 32203
+Garbage collection #7: 32203 nodes / 10247 free / 0.0010s / 0.0060s total
+Garbage collection #8: 32203 nodes / 8191 free / 0.0010s / 0.0070s total
+Garbage collection #9: 32203 nodes / 0 free / 0.0010s / 0.0090s total
+Resizing node table from 32203 to 64403
+I0 [0..3581] corresponds to H0[2237..5818]
+Result: 22013 nodes
+
+Counting contexts...
+java -cp "../bin/PQL-0.2.jar:." -mx256m -Dlearnbestorder=n -Dsingleignore=yes -Dbasedir=./results/ -Dbddcache=1500000 -Dbddnodes=40000000 -Dnumberingtype=scc -Dpa.clinit=no -Dpa.filternull=yes -Dpa.unknowntypes=no net.sf.bddbddb.Solver number.dtl
+Initializing BDD library (40000000 nodes, cache size 1500000, min free 0.2%)
+Using BDD library BuDDy - release 2.4 rev432
+Opening Datalog program "number.dtl"
+12 field domains.
+5 relations.
+2 rules.
+Splitting rules: done.
+Initializing solver: Adding missing domain "I1" to bddvarorder.
+Adding missing domain "STR0" to bddvarorder.
+Eliminating unused domain "C1" from bddvarorder.
+Eliminating unused domain "G0" from bddvarorder.
+Setting variable ordering to STR0_C0_N0_F0_I1_I0_M1_M0_V1xV0_VC1xVC0_T0_Z0_T1_H0_H1, Start reordering
+End reordering. Went from 640 to 598 nodes, gain = 6% (0.0070 sec)
+done.
+182,181,180,179,178,177,176,175,174,173,172,171,170,169,168,167,154,153,152,151,150,149,148,147,146,145,144,143,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,97,96,95,94,93,92,91,90,89,88,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,166,165,164,163,162,161,160,159,158,157,156,155,142,141,140,139,138,137,136,135,134,133,132,131,27,13,26,12,25,11,24,10,23,9,22,8,21,7,20,6,19,5,18,4,17,3,16,2,15,1,14,0,184,183,106,105,104,103,102,101,100,99,98,87,86,85,84,83,82,115,114,113,112,111,110,109,108,107,69,68,67,66,65,64,63,62,61,60,59,58,81,80,79,78,77,76,75,74,73,72,71,70,
+Resizing node table from 1009 to 39999983
+Trials filename=trials_number.xml
+done.
+Loading initial relations: Loading BDD from file: mI.bdd 12313 nodes, 3581.0 elements.
+Loading BDD from file: IE0.bdd 7604 nodes, 10970.0 elements.
+Loading BDD from file: roots.bdd 19 nodes, 76.0 elements.
+done. (98 ms)
+Stratifying: 
+Discovering stratum, 0 SCCs visited so far
+Finished discovery of 11 SCCs in 1 strata
+done. (9 ms)
+Solving: 
+list1:
+  list2:
+    mI0(m:M0,i:I0) :- mI(m:M0,i:I0,_:N0).
+    IEnum(i,m,vc2,vc1) :- roots(m), mI0(m,i), IE0(i,m).
+
+Applying inference rule:
+   mI0(m:M0,i:I0) :- mI(m:M0,i:I0,_:N0). (1)
+Applying numbering rule:
+   IEnum(i,m,vc2,vc1) :- roots(m), mI0(m,i), IE0(i,m).
+Navigating relation graph: 0/256: 0.0                Navigating relation graph: 0/512: 0.0                Navigating relation graph: 0/768: 0.0                Navigating relation graph: 0/1024: 0.0                Navigating relation graph: 0/1280: 0.0                Navigating relation graph: 0/1536: 0.0                Navigating relation graph: 0/1792: 0.0                Navigating relation graph: 0/2048: 0.0                Navigating relation graph: 0/2304: 0.0                Navigating relation graph: 0/2560: 0.0                Navigating relation graph: 0/2816: 0.0                Navigating relation graph: 0/3072: 0.0                Navigating relation graph: 0/3328: 0.0                Navigating relation graph: 0/3584: 0.0                Navigating relation graph: 0/3840: 0.0                Navigating relation graph: 0/4096: 0.0                Navigating relation graph: 0/4352: 0.0                Navigating relation graph: 0/4608: 0.0                Navigating relation graph: 0/4864: 0.0                Navigating relation graph: 0/5120: 0.0                Navigating relation graph: 0/5376: 0.0 WARNING: Cannot load mapfile "./results/class.map", skipping.
+Garbage collection #1: 1009 nodes / 235 free / 0.0010s / 0.0010s total
+               Navigating relation graph: 0/5632: 0.0                Navigating relation graph: 0/5888: 0.0                Navigating relation graph: 0/6144: 0.0                Navigating relation graph: 0/6400: 0.0                Navigating relation graph: 0/6656: 0.0                Navigating relation graph: 0/6912: 0.0                Navigating relation graph: 0/7168: 0.0                Navigating relation graph: 0/7424: 0.0                Navigating relation graph: 0/7680: 0.0                Navigating relation graph: 0/7936: 0.0                Navigating relation graph: 0/8192: 0.0                Navigating relation graph: 0/8448: 0.0                Navigating relation graph: 0/8704: 0.0                Navigating relation graph: 0/8960: 0.0                Navigating relation graph: 0/9216: 0.0                Navigating relation graph: 0/9472: 0.0                Navigating relation graph: 182/9728: 0.01870888157894737                Navigating relation graph: 438/9984: 0.043870192307692304                Navigating relation graph: 694/10240: 0.0677734375                Navigating relation graph: 950/10496: 0.09051067073170732                Navigating relation graph: 1206/10752: 0.11216517857142858                Navigating relation graph: 1462/11008: 0.1328125                Navigating relation graph: 1718/11264: 0.15252130681818182                Navigating relation graph: 1974/11520: 0.17135416666666667                Navigating relation graph: 2230/11776: 0.18936820652173914                Navigating relation graph: 2486/12032: 0.2066156914893617                Navigating relation graph: 2742/12288: 0.22314453125                Navigating relation graph: 2998/12544: 0.23899872448979592                Navigating relation graph: 3254/12800: 0.25421875                Navigating relation graph: 3510/13056: 0.2688419117647059                Navigating relation graph: 3766/13312: 0.2829026442307692                Navigating relation graph: 4022/13568: 0.29643278301886794                Navigating relation graph: 4278/13824: 0.3094618055555556                Navigating relation graph: 4534/14080: 0.32201704545454546                Navigating relation graph: 4790/14336: 0.33412388392857145                Navigating relation graph: 5046/14592: 0.3458059210526316                Navigating relation graph: 5302/14848: 0.3570851293103448                Navigating relation graph: 5558/15104: 0.3679819915254237                Navigating relation graph: 5814/15360: 0.378515625                Navigating relation graph: 6070/15616: 0.38870389344262296                Navigating relation graph: 6326/15872: 0.3985635080645161                Navigating relation graph: 6582/16128: 0.40811011904761907                Navigating relation graph: 6838/16384: 0.4173583984375                Navigating relation graph: 7094/16640: 0.4263221153846154                Navigating relation graph: 7350/16896: 0.43501420454545453                Navigating relation graph: 7606/17152: 0.443446828358209                Navigating relation graph: 7862/17408: 0.45163143382352944                Navigating relation graph: 8118/17664: 0.4595788043478261                Navigating relation graph: 8374/17920: 0.46729910714285716                Navigating relation graph: 8630/18176: 0.4748019366197183                Navigating relation graph: 8886/18432: 0.4820963541666667                Navigating relation graph: 9142/18688: 0.4891909246575342                Navigating relation graph: 9398/18944: 0.49609375                Done counting paths (1485 ms, number of paths = 4789639 (23 bits)
+
+Requires 4789639 paths.
+Numbering contexts...
+java -cp "../bin/PQL-0.2.jar:." -mx256m -Dlearnbestorder=n -Dsingleignore=yes -Dbasedir=./results/ -Dbddcache=1500000 -Dbddnodes=40000000 -Dnumberingtype=scc -Dpa.clinit=no -Dpa.filternull=yes -Dpa.unknowntypes=no net.sf.bddbddb.Solver numbering.dtl
+Initializing BDD library (40000000 nodes, cache size 1500000, min free 0.2%)
+Using BDD library BuDDy - release 2.4 rev432
+Opening Datalog program "numbering.dtl"
+12 field domains.
+5 relations.
+2 rules.
+Splitting rules: done.
+Initializing solver: Adding missing domain "I1" to bddvarorder.
+Adding missing domain "STR0" to bddvarorder.
+Eliminating unused domain "C1" from bddvarorder.
+Eliminating unused domain "G0" from bddvarorder.
+Setting variable ordering to STR0_C0_N0_F0_I1_I0_M1_M0_V1xV0_VC1xVC0_T0_Z0_T1_H0_H1, Start reordering
+End reordering. Went from 794 to 774 nodes, gain = 2% (0.013 sec)
+done.
+182,181,180,179,178,177,176,175,174,173,172,171,170,169,168,167,154,153,152,151,150,149,148,147,146,145,144,143,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,97,96,95,94,93,92,91,90,89,88,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,166,165,164,163,162,161,160,159,158,157,156,155,142,141,140,139,138,137,136,135,134,133,132,131,27,13,26,12,25,11,24,10,23,9,22,8,21,7,20,6,19,5,18,4,17,3,16,2,15,1,14,0,228,205,227,204,226,203,225,202,224,201,223,200,222,199,221,198,220,197,219,196,218,195,217,194,216,193,215,192,214,191,213,190,212,189,211,188,210,187,209,186,208,185,207,184,206,183,106,105,104,103,102,101,100,99,98,87,86,85,84,83,82,115,114,113,112,111,110,109,108,107,69,68,67,66,65,64,63,62,61,60,59,58,81,80,79,78,77,76,75,74,73,72,71,70,
+Resizing node table from 1009 to 39999983
+Trials filename=trials_numbering.xml
+done.
+Loading initial relations: Loading BDD from file: mI.bdd 12313 nodes, 3581.0 elements.
+Loading BDD from file: IE0.bdd 7604 nodes, 10970.0 elements.
+Loading BDD from file: roots.bdd 19 nodes, 76.0 elements.
+done. (93 ms)
+Stratifying: 
+Discovering stratum, 0 SCCs visited so far
+Finished discovery of 11 SCCs in 1 strata
+done. (8 ms)
+Solving: 
+list1:
+  list2:
+    mI0(m:M0,i:I0) :- mI(m:M0,i:I0,_:N0).
+    IEnum(i,m,vc2,vc1) :- roots(m), mI0(m,i), IE0(i,m).
+
+Applying inference rule:
+   mI0(m:M0,i:I0) :- mI(m:M0,i:I0,_:N0). (1)
+Applying numbering rule:
+   IEnum(i,m,vc2,vc1) :- roots(m), mI0(m,i), IE0(i,m).
+Navigating relation graph: 0/256: 0.0                Navigating relation graph: 0/512: 0.0                Navigating relation graph: 0/768: 0.0                Navigating relation graph: 0/1024: 0.0                Navigating relation graph: 0/1280: 0.0                Navigating relation graph: 0/1536: 0.0                Navigating relation graph: 0/1792: 0.0                Navigating relation graph: 0/2048: 0.0                Navigating relation graph: 0/2304: 0.0                Navigating relation graph: 0/2560: 0.0                Navigating relation graph: 0/2816: 0.0                Navigating relation graph: 0/3072: 0.0                Navigating relation graph: 0/3328: 0.0                Navigating relation graph: 0/3584: 0.0                Navigating relation graph: 0/3840: 0.0                Navigating relation graph: 0/4096: 0.0                Navigating relation graph: 0/4352: 0.0                Navigating relation graph: 0/4608: 0.0                Navigating relation graph: 0/4864: 0.0                Navigating relation graph: 0/5120: 0.0                Navigating relation graph: 0/5376: 0.0                Navigating relation graph: 0/5632: 0.0                Navigating relation graph: 0/5888: 0.0                Navigating relation graph: 0/6144: 0.0                Navigating relation graph: 0/6400: 0.0                Navigating relation graph: 0/6656: 0.0                Navigating relation graph: 0/6912: 0.0                Navigating relation graph: 0/7168: 0.0                Navigating relation graph: 0/7424: 0.0                Navigating relation graph: 0/7680: 0.0                Navigating relation graph: 0/7936: 0.0                Navigating relation graph: 0/8192: 0.0                Navigating relation graph: 0/8448: 0.0                Navigating relation graph: 0/8704: 0.0                Navigating relation graph: 0/8960: 0.0                Navigating relation graph: 0/9216: 0.0                Navigating relation graph: 0/9472: 0.0                Navigating relation graph: 182/9728: 0.01870888157894737                Navigating relation gWARNING: Cannot load mapfile "./results/class.map", skipping.
+Garbage collection #1: 1009 nodes / 69 free / 0.0020s / 0.0020s total
+Garbage collection #2: 2017 nodes / 838 free / 0.0010s / 0.0040s total
+BDD file "./results/hP0.bdd" has no header line.
+raph: 438/9984: 0.043870192307692304                Navigating relation graph: 694/10240: 0.0677734375                Navigating relation graph: 950/10496: 0.09051067073170732                Navigating relation graph: 1206/10752: 0.11216517857142858                Navigating relation graph: 1462/11008: 0.1328125                Navigating relation graph: 1718/11264: 0.15252130681818182                Navigating relation graph: 1974/11520: 0.17135416666666667                Navigating relation graph: 2230/11776: 0.18936820652173914                Navigating relation graph: 2486/12032: 0.2066156914893617                Navigating relation graph: 2742/12288: 0.22314453125                Navigating relation graph: 2998/12544: 0.23899872448979592                Navigating relation graph: 3254/12800: 0.25421875                Navigating relation graph: 3510/13056: 0.2688419117647059                Navigating relation graph: 3766/13312: 0.2829026442307692                Navigating relation graph: 4022/13568: 0.29643278301886794                Navigating relation graph: 4278/13824: 0.3094618055555556                Navigating relation graph: 4534/14080: 0.32201704545454546                Navigating relation graph: 4790/14336: 0.33412388392857145                Navigating relation graph: 5046/14592: 0.3458059210526316                Navigating relation graph: 5302/14848: 0.3570851293103448                Navigating relation graph: 5558/15104: 0.3679819915254237                Navigating relation graph: 5814/15360: 0.378515625                Navigating relation graph: 6070/15616: 0.38870389344262296                Navigating relation graph: 6326/15872: 0.3985635080645161                Navigating relation graph: 6582/16128: 0.40811011904761907                Navigating relation graph: 6838/16384: 0.4173583984375                Navigating relation graph: 7094/16640: 0.4263221153846154                Navigating relation graph: 7350/16896: 0.43501420454545453                Navigating relation graph: 7606/17152: 0.443446828358209                Navigating relation graph: 7862/17408: 0.45163143382352944                Navigating relation graph: 8118/17664: 0.4595788043478261                Navigating relation graph: 8374/17920: 0.46729910714285716                Navigating relation graph: 8630/18176: 0.4748019366197183                Navigating relation graph: 8886/18432: 0.4820963541666667                Navigating relation graph: 9142/18688: 0.4891909246575342                Navigating relation graph: 9398/18944: 0.49609375                Done counting paths (1632 ms, number of paths = 4789639 (23 bits)
+Time spent: 2421 ms
+done. (2439 ms)
+SOLVE_TIME=2439
+MAX_NODES=39999983
+FINAL_NODES=803280
+Rule mI0(m:M0,i:I0) :- mI(m:M0,i:I0,_:N0).
+   Updates: 1
+   Time: 16 ms
+   Longest Iteration: 0 (0 ms)
+Rule IEnum(i,m,vc2,vc1) :- roots(m), mI0(m,i), IE0(i,m).
+   Time: 2421 ms
+Saving results: Dumping BDD for IEnum
+Relation IEnum: 116236 nodes, 5.3958506E7 elements (I0,M0,VC0,VC1)
+done. (127 ms)
+
+Performing pointer analysis...
+java -cp "../bin/PQL-0.2.jar:." -mx256m -Dlearnbestorder=n -Dsingleignore=yes -Dbasedir=./results/ -Dbddcache=1500000 -Dbddnodes=40000000 -Dnumberingtype=scc -Dpa.clinit=no -Dpa.filternull=yes -Dpa.unknowntypes=no net.sf.bddbddb.Solver pacs.dtl
+Initializing BDD library (40000000 nodes, cache size 1500000, min free 0.2%)
+Using BDD library BuDDy - release 2.4 rev432
+Opening Datalog program "pacs.dtl"
+12 field domains.
+27 relations.
+11 rules.
+Splitting rules: done.
+Initializing solver: Resizing node table from 1009 to 2017
+Adding missing domain "I1" to bddvarorder.
+Adding missing domain "STR0" to bddvarorder.
+Eliminating unused domain "G0" from bddvarorder.
+Setting variable ordering to STR0_C0_N0_F0_I1_I0_M1_M0_V1xV0_VC1xVC0_T0_Z0_T1_H0_H1, Start reordering
+End reordering. Went from 1231 to 1179 nodes, gain = 4% (0.015 sec)
+done.
+182,181,180,179,178,177,176,175,174,173,172,171,170,169,168,167,154,153,152,151,150,149,148,147,146,145,144,143,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,97,96,95,94,93,92,91,90,89,88,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,166,165,164,163,162,161,160,159,158,157,156,155,142,141,140,139,138,137,136,135,134,133,132,131,27,13,26,12,25,11,24,10,23,9,22,8,21,7,20,6,19,5,18,4,17,3,16,2,15,1,14,0,228,205,227,204,226,203,225,202,224,201,223,200,222,199,221,198,220,197,219,196,218,195,217,194,216,193,215,192,214,191,213,190,212,189,211,188,210,187,209,186,208,185,207,184,206,183,106,105,104,103,102,101,100,99,98,87,86,85,84,83,82,115,114,113,112,111,110,109,108,107,69,68,67,66,65,64,63,62,61,60,59,58,81,80,79,78,77,76,75,74,73,72,71,70,
+Resizing node table from 2017 to 39999983
+Trials filename=trials_pacs.xml
+done.
+Loading initial relations: Loading BDD from file: vP0.bdd 11189 nodes, 3821.0 elements.
+Loading BDD from file: A.bdd 4414 nodes, 2403.0 elements.
+Loading BDD from file: S.bdd 12155 nodes, 1402.0 elements.
+Loading BDD from file: L.bdd 8817 nodes, 633.0 elements.
+Loading BDD from file: actual.bdd 22505 nodes, 5928.0 elements.
+Loading BDD from file: formal.bdd 8144 nodes, 1797.0 elements.
+Loading BDD from file: Mret.bdd 2809 nodes, 399.0 elements.
+Loading BDD from file: Mthr.bdd 9429 nodes, 3752.0 elements.
+Loading BDD from file: Iret.bdd 7342 nodes, 930.0 elements.
+Loading BDD from file: Ithr.bdd 17179 nodes, 3581.0 elements.
+Loading BDD from file: mI.bdd 12313 nodes, 3581.0 elements.
+Loading BDD from file: IE0.bdd 7604 nodes, 10970.0 elements.
+Loading BDD from file: vT.bdd 5531 nodes, 10164.0 elements.
+Loading BDD from file: hT.bdd 2975 nodes, 2249.0 elements.
+Loading BDD from file: aT.bdd 1743 nodes, 1607.0 elements.
+Loading BDD from file: cha.bdd 4341 nodes, 2347.0 elements.
+Loading BDD from file: hP0.bdd Warning: ./results/hP0.bdd is zero.
+0 nodes, 0.0 elements.
+Loading BDD from file: mV.bdd 10850 nodes, 9961.0 elements.
+Loading BDD from file: IEnum.bdd 116236 nodes, 5.3958506E7 elements.
+done. (440 ms)
+Stratifying: 
+Note: the following relations are unused:
+    [cha, Mthr, Ithr, mV, IE1, hP0, mI]
+Note: the following rules are unused:
+Discovering stratum, 0 SCCs visited so far
+Finished discovery of 47 SCCs in 1 strata
+done. (15 ms)
+Solving: 
+list1:
+  list2:
+    cvP(_,v:V0,h:H0) :- vP0(v:V0,h:H0).
+    cA(_,v1:V0,_,v2:V1) :- A(v1:V0,v2:V1).
+    IEcs(vc2:VC1,i:I0,vc1:VC0,m:M0) :- IE0(i:I0,m:M0), IEnum(i:I0,m:M0,vc2:VC1,vc1:VC0).
+    IE(i:I0,m:M0) :- IEcs(_:VC0,i:I0,_:VC1,m:M0).
+    cA(vc2:VC0,v2:V0,vc1:VC1,v1:V1) :- Mret(m:M0,v1:V1), IEcs(vc2:VC0,i:I0,vc1:VC1,m:M0), Iret(i:I0,v2:V0).
+    cA(vc1:VC1,v1:V0,vc2:VC0,v2:V1) :- formal(m:M0,z:Z0,v1:V0), IEcs(vc2:VC0,i:I0,vc1:VC1,m:M0), actual(i:I0,z:Z0,v2:V1).
+    vPfilter(v:V0,h:H0) :- vT(v:V0,tv:T0), aT(tv:T0,th:T1), hT(h:H0,th:T1).
+    loop3:
+      loop5:
+        cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0).
+      cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0).
+      hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1).
+      cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1).
+      cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1).
+    vP(v:V0,h:H0) :- cvP(_:VC0,v:V0,h:H0).
+
+Applying inference rule:
+   cvP(_,v:V0,h:H0) :- vP0(v:V0,h:H0). (1)
+Applying inference rule:
+   cA(_,v1:V0,_,v2:V1) :- A(v1:V0,v2:V1). (1)
+Applying inference rule:
+   IEcs(vc2:VC1,i:I0,vc1:VC0,m:M0) :- IE0(i:I0,m:M0), IEnum(i:I0,m:M0,vc2:VC1,vc1:VC0). (1)
+Applying inference rule:
+   IE(i:I0,m:M0) :- IEcs(_:VC0,i:I0,_:VC1,m:M0). (1)
+Applying inference rule:
+   cA(vc2:VC0,v2:V0,vc1:VC1,v1:V1) :- Mret(m:M0,v1:V1), IEcs(vc2:VC0,i:I0,vc1:VC1,m:M0), Iret(i:I0,v2:V0). (1)
+Applying inference rule:
+   cA(vc1:VC1,v1:V0,vc2:VC0,v2:V1) :- formal(m:M0,z:Z0,v1:V0), IEcs(vc2:VC0,i:I0,vc1:VC1,m:M0), actual(i:I0,z:Z0,v2:V1). (1)
+Applying inference rule:
+   vPfilter(v:V0,h:H0) :- vT(v:V0,tv:T0), aT(tv:T0,th:T1), hT(h:H0,th:T1). (1)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (1)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (2)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (3)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (4)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (5)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (6)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (7)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (8)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (9)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (10)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (11)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (12)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (13)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (14)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (15)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (16)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (17)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (18)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (1)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (1)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (1)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (1)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (19)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (20)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (21)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (22)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (23)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (24)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (25)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (26)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (27)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (28)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (29)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (30)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (31)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (32)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (33)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (34)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (35)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (36)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (2)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (2)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (2)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (2)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (37)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (38)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (39)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (40)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (41)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (42)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (43)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (44)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (45)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (3)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (3)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (3)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (3)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (46)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (47)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (48)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (49)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (50)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (4)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (4)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (4)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (4)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (51)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (52)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (53)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (54)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (55)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (5)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (5)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (5)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (5)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (56)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (57)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (58)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (59)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (60)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (61)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (62)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (6)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (6)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (6)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (6)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (63)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (64)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (65)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (66)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (67)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (68)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (69)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (7)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (7)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (7)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (7)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (70)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (8)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (8)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (8)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (8)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (71)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (9)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (9)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (9)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (9)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (72)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (73)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (74)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (10)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (10)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (10)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (10)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (75)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (76)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (77)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (78)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (79)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (80)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (81)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (11)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (11)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (11)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (11)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (82)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (83)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (84)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (85)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (12)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (12)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (12)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (12)
+Applying inference rule:
+   cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0). (inc) (86)
+Applying inference rule:
+   cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0). (inc) (13)
+Applying inference rule:
+   hP(h1:H0,f:F0,h2:H1) :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1). (inc) (13)
+Applying inference rule:
+   cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1). (inc) (13)
+Applying inference rule:
+   cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1). (inc) (13)
+Applying inference rule:
+   vP(v:V0,h:H0) :- cvP(_:VC0,v:V0,h:H0). (1)
+done. (454 ms)
+SOLVE_TIME=454
+MAX_NODES=39999983
+FINAL_NODES=2085718
+Rule cA(_,v1:V0,_,v2:V1) :- A(v1:V0,v2:V1).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule vPfilter(v:V0,h:H0) :- vT(v:V0,tv:T0), aT(tv:T0,th:T1), hT(h:H0,th:T1).
+   Updates: 1
+   Time: 3 ms
+   Longest Iteration: 0 (0 ms)
+Rule cvP(_,v:V0,h:H0) :- vP0(v:V0,h:H0).
+   Updates: 1
+   Time: 4 ms
+   Longest Iteration: 0 (0 ms)
+Rule cvP(vc1:VC0,v2:V1,h2:H1) :- cvP_8_1(v2:V1,vc1:VC0,h2:H1), vPfilter(v2:V1,h2:H1).
+   Updates: 13
+   Time: 7 ms
+   Longest Iteration: 0 (0 ms)
+Rule cA(vc2:VC0,v2:V0,vc1:VC1,v1:V1) :- Mret(m:M0,v1:V1), IEcs(vc2:VC0,i:I0,vc1:VC1,m:M0), Iret(i:I0,v2:V0).
+   Updates: 1
+   Time: 9 ms
+   Longest Iteration: 0 (0 ms)
+Rule cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0) :- L(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0).
+   Updates: 13
+   Time: 9 ms
+   Longest Iteration: 0 (0 ms)
+Rule vP(v:V0,h:H0) :- cvP(_:VC0,v:V0,h:H0).
+   Updates: 1
+   Time: 10 ms
+   Longest Iteration: 0 (0 ms)
+Rule cvP_8_1(v2:V1,vc1:VC0,h2:H1) :- cvP_8_0(f:F0,v2:V1,vc1:VC0,h1:H0), hP(h1:H0,f:F0,h2:H1).
+   Updates: 13
+   Time: 10 ms
+   Longest Iteration: 0 (0 ms)
+Rule IE(i:I0,m:M0) :- IEcs(_:VC0,i:I0,_:VC1,m:M0).
+   Updates: 1
+   Time: 25 ms
+   Longest Iteration: 0 (0 ms)
+Rule IEcs(vc2:VC1,i:I0,vc1:VC0,m:M0) :- IE0(i:I0,m:M0), IEnum(i:I0,m:M0,vc2:VC1,vc1:VC0).
+   Updates: 1
+   Time: 28 ms
+   Longest Iteration: 0 (0 ms)
+Rule hP(h1:H0,f:F0,h2:H1)WARNING: Cannot load mapfile "./results/class.map", skipping.
+Garbage collection #1: 1009 nodes / 464 free / 0.0010s / 0.0010s total
+ :- S(v1:V0,f:F0,v2:V1), cvP(vc1:VC0,v1:V0,h1:H0), cvP(vc1:VC0,v2:V1,h2:H1).
+   Updates: 13
+   Time: 43 ms
+   Longest Iteration: 0 (0 ms)
+Rule cA(vc1:VC1,v1:V0,vc2:VC0,v2:V1) :- formal(m:M0,z:Z0,v1:V0), IEcs(vc2:VC0,i:I0,vc1:VC1,m:M0), actual(i:I0,z:Z0,v2:V1).
+   Updates: 1
+   Time: 98 ms
+   Longest Iteration: 0 (0 ms)
+Rule cvP(vc1:VC0,v1:V0,h:H0) :- cA(vc1:VC0,v1:V0,vc2:VC1,v2:V1), cvP(vc2:VC1,v2:V1,h:H0), vPfilter(v1:V0,h:H0).
+   Updates: 86
+   Time: 195 ms
+   Longest Iteration: 0 (0 ms)
+Saving results: Dumping BDD for IEcs
+Relation IEcs: 115372 nodes, 5.3958506E7 elements (I0,M0,VC0,VC1)
+Dumping BDD for cA
+Relation cA: 141629 nodes, 1.69096092338145824E17 elements (V0,V1,VC0,VC1)
+Dumping BDD for cvP
+Relation cvP: 56964 nodes, 5.4120275611E10 elements (V0,H0,VC0)
+Dumping BDD for hP
+Relation hP: 13743 nodes, 18672.0 elements (H0,H1,F0)
+Dumping BDD for IE
+Relation IE: 7604 nodes, 10970.0 elements (I0,M0)
+Dumping BDD for vP
+Relation vP: 17627 nodes, 67537.0 elements (V0,H0)
+done. (381 ms)
+
+Performing PQL analysis...
+java -cp "../bin/PQL-0.2.jar:." -mx256m -Dlearnbestorder=n -Dsingleignore=yes -Dbasedir=./results/ -Dbddcache=1500000 -Dbddnodes=40000000 -Dnumberingtype=scc -Dpa.clinit=no -Dpa.filternull=yes -Dpa.unknowntypes=no net.sf.bddbddb.Solver dumpat.dtl
+Initializing BDD library (40000000 nodes, cache size 1500000, min free 0.2%)
+Using BDD library BuDDy - release 2.4 rev432
+Opening Datalog program "dumpat.dtl"
+12 field domains.
+1 relations.
+0 rules.
+Splitting rules: done.
+Initializing solver: Adding missing domain "I1" to bddvarorder.
+Adding missing domain "C0" to bddvarorder.
+Adding missing domain "STR0" to bddvarorder.
+Setting variable ordering to STR0_C0_M1_I1_I0_N0_F0_M0_V1xV0_H1_Z0_T0_T1_H0, Start reordering
+End reordering. Went from 545 to 545 nodes, gain = 0% (0.0080 sec)
+done.
+182,181,180,179,178,177,176,175,174,173,172,171,170,169,168,167,154,153,152,151,150,149,148,147,146,145,144,143,166,165,164,163,162,161,160,159,158,157,156,155,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,97,96,95,94,93,92,91,90,89,88,142,141,140,139,138,137,136,135,134,133,132,131,27,13,26,12,25,11,24,10,23,9,22,8,21,7,20,6,19,5,18,4,17,3,16,2,15,1,14,0,81,80,79,78,77,76,75,74,73,72,71,70,87,86,85,84,83,82,106,105,104,103,102,101,100,99,98,115,114,113,112,111,110,109,108,107,69,68,67,66,65,64,63,62,61,60,59,58,
+Resizing node table from 1009 to 39999983
+Trials filename=trials_dumpat.xml
+done.
+Loading initial relations: Loading BDD from file: aT.bdd 1743 nodes, 1607.0 elements.
+done. (38 ms)
+Stratifying: 
+Discovering stratum, 0 SCCs visited so far
+Finished discovery of 3 SCCs in 1 strata
+done. (12 ms)
+Solving: 
+list1:
+  list2:
+
+done. (1 ms)
+SOLVE_TIME=1
+MAX_NODES=39999983
+FINAL_NODES=2275
+Saving results: Dumping tuples for aT
+Relation aT: 1743 nodes, 1607.0 elements (T0,T1)
+./results/aT.tuples domains { T0 T1 } = 1743 nodes, 1607.0 elements
+Done writing 1607 lines.
+done. (89 ms)
+
+java -cp .:../bin/PQL-0.2.jar -Dpql.datalog.pacs=no net.sf.pql.datalog.DatalogGenerator sql_inject.query
+Nothing to emit for [MethodCall: dest=_(_) base=object x(*) methodname=_(getChars) args=[_(_), _(_), object y(*), _(_)] (4)]
+Nothing to emit for [MethodCall: dest=_(_) base=object y(*) methodname=_(insert) args=[_(_), object x(*)] (2)]
+Nothing to emit for [MethodCall: dest=_(_) base=object y(*) methodname=_(replace) args=[_(_), _(_), object x(*)] (3)]
+Nothing to emit for [MethodCall: dest=object y(*) base=object x(*) methodname=_(getBytes) args=[]]
+Nothing to emit for [MethodCall: dest=object y(*) base=_(_) methodname=_(copyValueOf) args=[object x(*)] (1)]
+Nothing to emit for [MethodCall: dest=object y(*) base=object x(*) methodname=_(concat) args=[_(_)] (1)]
+Nothing to emit for [MethodCall: dest=object y(*) base=_(_) methodname=_(concat) args=[object x(*)] (1)]
+Nothing to emit for [MethodCall: dest=object y(*) base=object x(*) methodname=_(nextToken) args=[] (0)]
+Nothing to emit for [MethodCall: dest=object y(*) base=object x(*) methodname=_(trim) args=[] WARNING: Cannot load mapfile "./results/class.map", skipping.
+Warning: Constant NOWHERE not found in map for relation I
+Garbage collection #1: 1009 nodes / 42 free / 0.0020s / 0.0020s total
+Garbage collection #2: 2017 nodes / 1033 free / 0.0020s / 0.0050s total
+(0)]
+Nothing to emit for [MethodCall: dest=object y(*) base=_(_) methodname=_(replaceAll) args=[_(_), object x(*)] (2)]
+Nothing to emit for [MethodCall: dest=object y(*) base=_(_) methodname=_(replaceFirst) args=[_(_), object x(*)] (2)]
+
+java -cp "../bin/PQL-0.2.jar:." -mx256m -Dlearnbestorder=n -Dsingleignore=yes -Dbasedir=./results/ -Dbddcache=1500000 -Dbddnodes=40000000 -Dnumberingtype=scc -Dpa.clinit=no -Dpa.filternull=yes -Dpa.unknowntypes=no net.sf.bddbddb.Solver pql_conv.dtl
+Initializing BDD library (40000000 nodes, cache size 1500000, min free 0.2%)
+Using BDD library BuDDy - release 2.4 rev432
+Opening Datalog program "pql_conv.dtl"
+12 field domains.
+30 relations.
+99 rules.
+Splitting rules: done.
+Initializing solver: Cannot assign I0 to attribute i1: I0 is already assigned
+Cannot assign H0 to attribute h_y: H0 is already assigned
+Cannot assign H0 to attribute h_z: H0 is already assigned
+Cannot assign H0 to attribute h_2: H0 is already assigned
+Cannot assign I0 to attribute i1: I0 is already assigned
+Cannot assign H0 to attribute h_tainted: H0 is already assigned
+Cannot assign H0 to attribute h_2: H0 is already assigned
+Cannot assign H0 to attribute h_3: H0 is already assigned
+Cannot assign H0 to attribute h_2: H0 is already assigned
+Cannot assign H0 to attribute h_3: H0 is already assigned
+Cannot assign H0 to attribute h_y: H0 is already assigned
+Cannot assign H0 to attribute h_temp: H0 is already assigned
+Resizing node table from 1009 to 2017
+Adding missing domain "I1" to bddvarorder.
+Adding missing domain "STR0" to bddvarorder.
+Adding missing domain "H2" to bddvarorder.
+Adding missing domain "H3" to bddvarorder.
+Adding missing domain "H4" to bddvarorder.
+Adding missing domain "Z1" to bddvarorder.
+Adding missing domain "I2" to bddvarorder.
+Eliminating unused domain "V2" from bddvarorder.
+Eliminating unused domain "VC1" from bddvarorder.
+Eliminating unused domain "VC0" from bddvarorder.
+Setting variable ordering to STR0_C0_N0_F0_I1_I2_I0_M1_M0_V1xV0_T0_Z1_Z0_T1_H0_H2_H3_H4_H1, Start reordering
+End reordering. Went from 1011 to 984 nodes, gain = 2% (0.015 sec)
+done.
+182,181,180,179,178,177,176,175,174,173,172,171,170,169,168,167,154,153,152,151,150,149,148,147,146,145,144,143,130,129,128,127,126,125,124,123,122,121,120,119,118,117,116,97,96,95,94,93,92,91,90,89,88,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,239,238,237,236,235,234,233,232,231,230,229,228,227,226,225,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,166,165,164,163,162,161,160,159,158,157,156,155,142,141,140,139,138,137,136,135,134,133,132,131,27,13,26,12,25,11,24,10,23,9,22,8,21,7,20,6,19,5,18,4,17,3,16,2,15,1,14,0,106,105,104,103,102,101,100,99,98,224,223,222,221,220,219,87,86,85,84,83,82,115,114,113,112,111,110,109,108,107,69,68,67,66,65,64,63,62,61,60,59,58,194,193,192,191,190,189,188,187,186,185,184,183,206,205,204,203,202,201,200,199,198,197,196,195,218,217,216,215,214,213,212,211,210,209,208,207,81,80,79,78,77,76,75,74,73,72,71,70,
+Resizing node table from 2017 to 39999983
+Initializing value of special relation I_eq_I I0,I1
+Initializing value of special relation H_eq_H H0,H1
+Trials filename=trials_pql_conv.xml
+done.
+Loading initial relations: Loading BDD from file: vP.bdd 17627 nodes, 67537.0 elements.
+Loading BDD from file: hP.bdd 13743 nodes, 18672.0 elements.
+Loading BDD from file: actual.bdd 22505 nodes, 5928.0 elements.
+Loading BDD from file: Iret.bdd 7342 nodes, 930.0 elements.
+Loading BDD from file: mI.bdd 12313 nodes, 3581.0 elements.
+Loading BDD from file: IE.bdd 7604 nodes, 10970.0 elements.
+done. (198 ms)
+Stratifying: 
+Discovering stratum, 0 SCCs visited so far
+Discovering stratum, 131 SCCs visited so far
+Finished discovery of 136 SCCs in 2 strata
+done. (28 ms)
+Solving: 
+list1:
+  list2:
+    recursedString(h_x:H0,h_y:H1,_) :- H_eq_H(h_x:H0,h_y:H1).
+    inv13(i:I0) :- IE(i:I0,277:M0).
+    inv13(i:I0) :- IE(i:I0,768:M0).
+    inv12(i:I0) :- IE(i:I0,231:M0).
+    inv12(i:I0) :- IE(i:I0,808:M0).
+    inv12(i:I0) :- IE(i:I0,1067:M0).
+    inv11(i:I0) :- IE(i:I0,419:M0).
+    inv11(i:I0) :- IE(i:I0,339:M0).
+    inv11(i:I0) :- IE(i:I0,875:M0).
+    inv10(i:I0) :- IE(i:I0,918:M0).
+    inv10(i:I0) :- IE(i:I0,1112:M0).
+    inv9(i:I0) :- IE(i:I0,1421:M0).
+    inv9(i:I0) :- IE(i:I0,211:M0).
+    inv9(i:I0) :- IE(i:I0,240:M0).
+    inv9(i:I0) :- IE(i:I0,1353:M0).
+    inv9(i:I0) :- IE(i:I0,1334:M0).
+    inv8(i:I0) :- IE(i:I0,918:M0).
+    inv8(i:I0) :- IE(i:I0,1112:M0).
+    inv7(i:I0) :- IE(i:I0,1357:M0).
+    inv7(i:I0) :- IE(i:I0,1255:M0).
+    inv7(i:I0) :- IE(i:I0,1223:M0).
+    inv7(i:I0) :- IE(i:I0,1295:M0).
+    inv7(i:I0) :- IE(i:I0,1218:M0).
+    inv7(i:I0) :- IE(i:I0,1242:M0).
+    inv7(i:I0) :- IE(i:I0,1395:M0).
+    inv7(i:I0) :- IE(i:I0,1309:M0).
+    inv7(i:I0) :- IE(i:I0,1257:M0).
+    inv7(i:I0) :- IE(i:I0,1374:M0).
+    inv7(i:I0) :- IE(i:I0,233:M0).
+    inv7(i:I0) :- IE(i:I0,1284:M0).
+    inv7(i:I0) :- IE(i:I0,213:M0).
+    inv7(i:I0) :- IE(i:I0,1313:M0).
+    inv7(i:I0) :- IE(i:I0,1387:M0).
+    inv7(i:I0) :- IE(i:I0,1249:M0).
+    inv7(i:I0) :- IE(i:I0,344:M0).
+    inv7(i:I0) :- IE(i:I0,1326:M0).
+    inv7(i:I0) :- IE(i:I0,1230:M0).
+    inv7(i:I0) :- IE(i:I0,1349:M0).
+    inv7(i:I0) :- IE(i:I0,1217:M0).
+    inv7(i:I0) :- IE(i:I0,1384:M0).
+    inv7(i:I0) :- IE(i:I0,42:M0).
+    inv7(i:I0) :- IE(i:I0,1195:M0).
+    inv7(i:I0) :- IE(i:I0,1198:M0).
+    inv7(i:I0) :- IE(i:I0,1405:M0).
+    inv7(i:I0) :- IE(i:I0,1240:M0).
+    inv7(i:I0) :- IE(i:I0,1252:M0).
+    inv7(i:I0) :- IE(i:I0,1307:M0).
+    inv7(i:I0) :- IE(i:I0,1291:M0).
+    inv7(i:I0) :- IE(i:I0,1356:M0).
+    inv7(i:I0) :- IE(i:I0,1248:M0).
+    inv6(i:I0) :- IE(i:I0,918:M0).
+    inv6(i:I0) :- IE(i:I0,1112:M0).
+    inv5(i:I0) :- IE(i:I0,918:M0).
+    inv5(i:I0) :- IE(i:I0,1112:M0).
+    inv4(i:I0) :- IE(i:I0,918:M0).
+    inv4(i:I0) :- IE(i:I0,1112:M0).
+    inv3(i:I0) :- IE(i:I0,312:M0).
+    inv3(i:I0) :- IE(i:I0,436:M0).
+    inv2(i:I0) :- IE(i:I0,805:M0).
+    inv2(i:I0) :- IE(i:I0,807:M0).
+    inv2(i:I0) :- IE(i:I0,420:M0).
+    inv2(i:I0) :- IE(i:I0,100:M0).
+    inv2(i:I0) :- IE(i:I0,1345:M0).
+    inv2(i:I0) :- IE(i:I0,45:M0).
+    inv2(i:I0) :- IE(i:I0,210:M0).
+    inv2(i:I0) :- IE(i:I0,792:M0).
+    inv2(i:I0) :- IE(i:I0,5:M0).
+    inv1(i:I0) :- IE(i:I0,433:M0).
+    inv0(i:I0) :- IE(i:I0,118:M0).
+    inv9(i:I0) :- mI(_:M0,i:I0,121:N0).
+    inv9(i:I0) :- mI(_:M0,i:I0,85:N0).
+    inv9(i:I0) :- mI(_:M0,i:I0,111:N0).
+    inv7(i:I0) :- mI(_:M0,i:I0,78:N0).
+    inv7(i:I0) :- mI(_:M0,i:I0,169:N0).
+    inv2(i:I0) :- mI(_:M0,i:I0,124:N0).
+    inv1(i:I0) :- mI(_:M0,i:I0,11:N0).
+    inv0(i:I0) :- mI(_:M0,i:I0,12:N0).
+    StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv13(i0:I0), actual(i0:I0,0:Z0,toUpperCase_this:V1), Iret(i0:I0,toUpperCase_return:V0), vP(toUpperCase_return:V0,h_y:H0), vP(toUpperCase_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv12(i0:I0), actual(i0:I0,0:Z0,toLowerCase_this:V1), Iret(i0:I0,toLowerCase_return:V0), vP(toLowerCase_return:V0,h_y:H0), vP(toLowerCase_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H1,h_y:H2,h_z:H0) :- inv11(i0:I0), actual(i0:I0,0:Z0,split_this:V1), Iret(i0:I0,split_return:V0), vP(split_return:V0,h_z:H0), vP(split_this:V1,h_x:H1), hP(h_z:H0,34:F0,h_y:H2), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv10(i0:I0), vP(java_lang_Number_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_Number_arg_0:V0), actual(i0:I0,0:Z1,java_lang_Number_return:V1), vP(java_lang_Number_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv9(i0:I0), actual(i0:I0,0:Z0,next_this:V1), Iret(i0:I0,next_return:V0), vP(next_return:V0,h_y:H0), vP(next_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv8(i0:I0), vP(java_util_StringTokenizer_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_util_StringTokenizer_arg_0:V0), actual(i0:I0,0:Z1,java_util_StringTokenizer_return:V1), vP(java_util_StringTokenizer_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv7(i0:I0), actual(i0:I0,0:Z0,toString_this:V1), Iret(i0:I0,toString_return:V0), vP(toString_return:V0,h_y:H0), vP(toString_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv6(i0:I0), vP(java_lang_StringBuilder_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_StringBuilder_arg_0:V0), actual(i0:I0,0:Z1,java_lang_StringBuilder_return:V1), vP(java_lang_StringBuilder_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv5(i0:I0), vP(java_lang_StringBuffer_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_StringBuffer_arg_0:V0), actual(i0:I0,0:Z1,java_lang_StringBuffer_return:V1), vP(java_lang_StringBuffer_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv4(i0:I0), vP(java_lang_String_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_String_arg_0:V0), actual(i0:I0,0:Z1,java_lang_String_return:V1), vP(java_lang_String_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv3(i0:I0), actual(i0:I0,0:Z0,substring_this:V1), Iret(i0:I0,substring_return:V0), vP(substring_return:V0,h_y:H0), vP(substring_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+    StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv2(i0:I0), actual(i0:I0,0:Z0,append_this:V1), vP(append_arg_0:V0,h_x:H0), actual(i0:I0,1:Z1,append_arg_0:V0), vP(append_this:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+    loop3:
+      recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4).
+    main(i0:I0,i1:I1,h_source:H0,h_tainted:H1) :- inv0(i0:I0), Iret(i0:I0,get_return:V0), vP(get_return:V0,h_source:H0), recursedString(h_source:H0,h_tainted:H1,_:H2), inv1(i1:I1), vP(use_arg_0:V1,h_tainted:H1), actual(i1:I1,1:Z0,use_arg_0:V1).
+    main_relevant(h_source:H0,h_tainted:H1) :- main(_:I0,_:I1,h_source:H0,h_tainted:H1).
+    recursedString_relevant(h_source:H0,h_tainted:H1,h_3:H2) :- main_relevant(h_source:H0,h_tainted:H1), recursedString(h_source:H0,h_tainted:H1,h_3:H2).
+    loop5:
+      recursedString_relevant(h_temp:H2,h_y:H1,h_3:H3) :- recursedString_relevant(_:H0,h_y:H1,h_temp:H2), recursedString(h_temp:H2,h_y:H1,h_3:H3).
+    StringProp_relevant(h_x:H0,h_temp:H2,h_3:H3) :- recursedString_relevant(h_x:H0,_:H1,h_temp:H2), StringProp(_:I0,_:I1,h_x:H0,h_temp:H2,h_3:H3).
+  list7:
+    instrument(i:I1) :- main(_:I0,i:I1,h_source:H0,h_tainted:H1), main_relevant(h_source:H0,h_tainted:H1), !I_eq_I(i:I1,3581:I2).
+    instrument(i:I0) :- main(i:I0,_:I1,h_source:H0,h_tainted:H1), main_relevant(h_source:H0,h_tainted:H1), !I_eq_I(i:I0,3581:I2).
+    instrument(i:I1) :- StringProp(_:I0,i:I1,h_x:H0,h_y:H1,h_z:H2), StringProp_relevant(h_x:H0,h_y:H1,h_z:H2), !I_eq_I(i:I1,3581:I2).
+    instrument(i:I0) :- StringProp(i:I0,_:I1,h_x:H0,h_y:H1,h_z:H2), StringProp_relevant(h_x:H0,h_y:H1,h_z:H2), !I_eq_I(i:I0,3581:I2).
+
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H1,_) :- H_eq_H(h_x:H0,h_y:H1). (1)
+Applying inference rule:
+   inv13(i:I0) :- IE(i:I0,277:M0). (1)
+Applying inference rule:
+   inv13(i:I0) :- IE(i:I0,768:M0). (1)
+Applying inference rule:
+   inv12(i:I0) :- IE(i:I0,231:M0). (1)
+Applying inference rule:
+   inv12(i:I0) :- IE(i:I0,808:M0). (1)
+Applying inference rule:
+   inv12(i:I0) :- IE(i:I0,1067:M0). (1)
+Applying inference rule:
+   inv11(i:I0) :- IE(i:I0,419:M0). (1)
+Applying inference rule:
+   inv11(i:I0) :- IE(i:I0,339:M0). (1)
+Applying inference rule:
+   inv11(i:I0) :- IE(i:I0,875:M0). (1)
+Applying inference rule:
+   inv10(i:I0) :- IE(i:I0,918:M0). (1)
+Applying inference rule:
+   inv10(i:I0) :- IE(i:I0,1112:M0). (1)
+Applying inference rule:
+   inv9(i:I0) :- IE(i:I0,1421:M0). (1)
+Applying inference rule:
+   inv9(i:I0) :- IE(i:I0,211:M0). (1)
+Applying inference rule:
+   inv9(i:I0) :- IE(i:I0,240:M0). (1)
+Applying inference rule:
+   inv9(i:I0) :- IE(i:I0,1353:M0). (1)
+Applying inference rule:
+   inv9(i:I0) :- IE(i:I0,1334:M0). (1)
+Applying inference rule:
+   inv8(i:I0) :- IE(i:I0,918:M0). (1)
+Applying inference rule:
+   inv8(i:I0) :- IE(i:I0,1112:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1357:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1255:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1223:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1295:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1218:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1242:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1395:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1309:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1257:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1374:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,233:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1284:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,213:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1313:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1387:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1249:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,344:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1326:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1230:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1349:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1217:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1384:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,42:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1195:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1198:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1405:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1240:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1252:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1307:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1291:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1356:M0). (1)
+Applying inference rule:
+   inv7(i:I0) :- IE(i:I0,1248:M0). (1)
+Applying inference rule:
+   inv6(i:I0) :- IE(i:I0,918:M0). (1)
+Applying inference rule:
+   inv6(i:I0) :- IE(i:I0,1112:M0). (1)
+Applying inference rule:
+   inv5(i:I0) :- IE(i:I0,918:M0). (1)
+Applying inference rule:
+   inv5(i:I0) :- IE(i:I0,1112:M0). (1)
+Applying inference rule:
+   inv4(i:I0) :- IE(i:I0,918:M0). (1)
+Applying inference rule:
+   inv4(i:I0) :- IE(i:I0,1112:M0). (1)
+Applying inference rule:
+   inv3(i:I0) :- IE(i:I0,312:M0). (1)
+Applying inference rule:
+   inv3(i:I0) :- IE(i:I0,436:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,805:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,807:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,420:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,100:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,1345:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,45:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,210:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,792:M0). (1)
+Applying inference rule:
+   inv2(i:I0) :- IE(i:I0,5:M0). (1)
+Applying inference rule:
+   inv1(i:I0) :- IE(i:I0,433:M0). (1)
+Applying inference rule:
+   inv0(i:I0) :- IE(i:I0,118:M0). (1)
+Applying inference rule:
+   inv9(i:I0) :- mI(_:M0,i:I0,121:N0). (1)
+Applying inference rule:
+   inv9(i:I0) :- mI(_:M0,i:I0,85:N0). (1)
+Applying inference rule:
+   inv9(i:I0) :- mI(_:M0,i:I0,111:N0). (1)
+Applying inference rule:
+   inv7(i:I0) :- mI(_:M0,i:I0,78:N0). (1)
+Applying inference rule:
+   inv7(i:I0) :- mI(_:M0,i:I0,169:N0). (1)
+Applying inference rule:
+   inv2(i:I0) :- mI(_:M0,i:I0,124:N0). (1)
+Applying inference rule:
+   inv1(i:I0) :- mI(_:M0,i:I0,11:N0). (1)
+Applying inference rule:
+   inv0(i:I0) :- mI(_:M0,i:I0,12:N0). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv13(i0:I0), actual(i0:I0,0:Z0,toUpperCase_this:V1), Iret(i0:I0,toUpperCase_return:V0), vP(toUpperCase_return:V0,h_y:H0), vP(toUpperCase_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv12(i0:I0), actual(i0:I0,0:Z0,toLowerCase_this:V1), Iret(i0:I0,toLowerCase_return:V0), vP(toLowerCase_return:V0,h_y:H0), vP(toLowerCase_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H1,h_y:H2,h_z:H0) :- inv11(i0:I0), actual(i0:I0,0:Z0,split_this:V1), Iret(i0:I0,split_return:V0), vP(split_return:V0,h_z:H0), vP(split_this:V1,h_x:H1), hP(h_z:H0,34:F0,h_y:H2), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv10(i0:I0), vP(java_lang_Number_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_Number_arg_0:V0), actual(i0:I0,0:Z1,java_lang_Number_return:V1), vP(java_lang_Number_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv9(i0:I0), actual(i0:I0,0:Z0,next_this:V1), Iret(i0:I0,next_return:V0), vP(next_return:V0,h_y:H0), vP(next_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv8(i0:I0), vP(java_util_StringTokenizer_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_util_StringTokenizer_arg_0:V0), actual(i0:I0,0:Z1,java_util_StringTokenizer_return:V1), vP(java_util_StringTokenizer_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv7(i0:I0), actual(i0:I0,0:Z0,toString_this:V1), Iret(i0:I0,toString_return:V0), vP(toString_return:V0,h_y:H0), vP(toString_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv6(i0:I0), vP(java_lang_StringBuilder_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_StringBuilder_arg_0:V0), actual(i0:I0,0:Z1,java_lang_StringBuilder_return:V1), vP(java_lang_StringBuilder_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv5(i0:I0), vP(java_lang_StringBuffer_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_StringBuffer_arg_0:V0), actual(i0:I0,0:Z1,java_lang_StringBuffer_return:V1), vP(java_lang_StringBuffer_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv4(i0:I0), vP(java_lang_String_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_String_arg_0:V0), actual(i0:I0,0:Z1,java_lang_String_return:V1), vP(java_lang_String_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv3(i0:I0), actual(i0:I0,0:Z0,substring_this:V1), Iret(i0:I0,substring_return:V0), vP(substring_return:V0,h_y:H0), vP(substring_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv2(i0:I0), actual(i0:I0,0:Z0,append_this:V1), vP(append_arg_0:V0,h_x:H0), actual(i0:I0,1:Z1,append_arg_0:V0), vP(append_this:V1,h_y:H1), I_eq_I(i1:I1,3581:I2). (1)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (1)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (inc) (2)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (inc) (3)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (inc) (4)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (inc) (5)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (inc) (6)
+Applying inference rule:
+   recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4). (inc) (7)
+Applying inference rule:
+   main(i0:I0,i1:I1,h_source:H0,h_tainted:H1) :- inv0(i0:I0), Iret(i0:I0,get_return:V0), vP(get_return:V0,h_source:H0), recursedString(h_source:H0,h_tainted:H1,_:H2), inv1(i1:I1), vP(use_arg_0:V1,h_tainted:H1), actual(i1:I1,1:Z0,use_arg_0:V1). (1)
+Applying inference rule:
+   main_relevant(h_source:H0,h_tainted:H1) :- main(_:I0,_:I1,h_source:H0,h_tainted:H1). (1)
+Applying inference rule:
+   recursedString_relevant(h_source:H0,h_tainted:H1,h_3:H2) :- main_relevant(h_source:H0,h_tainted:H1), recursedString(h_source:H0,h_tainted:H1,h_3:H2). (1)
+Applying inference rule:
+   recursedString_relevant(h_temp:H2,h_y:H1,h_3:H3) :- recursedString_relevant(_:H0,h_y:H1,h_temp:H2), recursedString(h_temp:H2,h_y:H1,h_3:H3). (1)
+Applying inference rule:
+   recursedString_relevant(h_temp:H2,h_y:H1,h_3:H3) :- recursedString_relevant(_:H0,h_y:H1,h_temp:H2), recursedString(h_temp:H2,h_y:H1,h_3:H3). (inc) (2)
+Applying inference rule:
+   recursedString_relevant(h_temp:H2,h_y:H1,h_3:H3) :- recursedString_relevant(_:H0,h_y:H1,h_temp:H2), recursedString(h_temp:H2,h_y:H1,h_3:H3). (inc) (3)
+Applying inference rule:
+   recursedString_relevant(h_temp:H2,h_y:H1,h_3:H3) :- recursedString_relevant(_:H0,h_y:H1,h_temp:H2), recursedString(h_temp:H2,h_y:H1,h_3:H3). (inc) (4)
+Applying inference rule:
+   StringProp_relevant(h_x:H0,h_temp:H2,h_3:H3) :- recursedString_relevant(h_x:H0,_:H1,h_temp:H2), StringProp(_:I0,_:I1,h_x:H0,h_temp:H2,h_3:H3). (1)
+Applying inference rule:
+   instrument(i:I1) :- main(_:I0,i:I1,h_source:H0,h_tainted:H1), main_relevant(h_source:H0,h_tainted:H1), !I_eq_I(i:I1,3581:I2). (1)
+Applying inference rule:
+   instrument(i:I0) :- main(i:I0,_:I1,h_source:H0,h_tainted:H1), main_relevant(h_source:H0,h_tainted:H1), !I_eq_I(i:I0,3581:I2). (1)
+Applying inference rule:
+   instrument(i:I1) :- StringProp(_:I0,i:I1,h_x:H0,h_y:H1,h_z:H2), StringProp_relevant(h_x:H0,h_y:H1,h_z:H2), !I_eq_I(i:I1,3581:I2). (1)
+Applying inference rule:
+   instrument(i:I0) :- StringProp(i:I0,_:I1,h_x:H0,h_y:H1,h_z:H2), StringProp_relevant(h_x:H0,h_y:H1,h_z:H2), !I_eq_I(i:I0,3581:I2). (1)
+done. (309 ms)
+SOLVE_TIME=309
+MAX_NODES=39999983
+FINAL_NODES=1459101
+Rule inv0(i:I0) :- mI(_:M0,i:I0,12:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv1(i:I0) :- mI(_:M0,i:I0,11:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv1(i:I0) :- IE(i:I0,433:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- mI(_:M0,i:I0,124:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,5:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,210:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,1345:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,100:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,807:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv3(i:I0) :- IE(i:I0,436:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv3(i0:I0), actual(i0:I0,0:Z0,substring_this:V1), Iret(i0:I0,substring_return:V0), vP(substring_return:V0,h_y:H0), vP(substring_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv4(i:I0) :- IE(i:I0,1112:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv4(i:I0) :- IE(i:I0,918:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv4(i0:I0), vP(java_lang_String_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_String_arg_0:V0), actual(i0:I0,0:Z1,java_lang_String_return:V1), vP(java_lang_String_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv5(i:I0) :- IE(i:I0,1112:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv5(i:I0) :- IE(i:I0,918:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv5(i0:I0), vP(java_lang_StringBuffer_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_StringBuffer_arg_0:V0), actual(i0:I0,0:Z1,java_lang_StringBuffer_return:V1), vP(java_lang_StringBuffer_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv6(i:I0) :- IE(i:I0,1112:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv6(i:I0) :- IE(i:I0,918:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv6(i0:I0), vP(java_lang_StringBuilder_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_StringBuilder_arg_0:V0), actual(i0:I0,0:Z1,java_lang_StringBuilder_return:V1), vP(java_lang_StringBuilder_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- mI(_:M0,i:I0,169:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- mI(_:M0,i:I0,78:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1248:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1291:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1307:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1240:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1198:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1195:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1384:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1217:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1349:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1230:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,344:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1387:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1313:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1284:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1374:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1309:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1395:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1218:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1223:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1357:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv8(i:I0) :- IE(i:I0,1112:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv8(i:I0) :- IE(i:I0,918:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv8(i0:I0), vP(java_util_StringTokenizer_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_util_StringTokenizer_arg_0:V0), actual(i0:I0,0:Z1,java_util_StringTokenizer_return:V1), vP(java_util_StringTokenizer_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- mI(_:M0,i:I0,111:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- mI(_:M0,i:I0,85:N0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- IE(i:I0,1353:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- IE(i:I0,211:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv10(i:I0) :- IE(i:I0,1112:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv11(i:I0) :- IE(i:I0,875:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv11(i:I0) :- IE(i:I0,419:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H1,h_y:H2,h_z:H0) :- inv11(i0:I0), actual(i0:I0,0:Z0,split_this:V1), Iret(i0:I0,split_return:V0), vP(split_return:V0,h_z:H0), vP(split_this:V1,h_x:H1), hP(h_z:H0,34:F0,h_y:H2), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv12(i:I0) :- IE(i:I0,1067:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv12(i:I0) :- IE(i:I0,231:M0).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv12(i0:I0), actual(i0:I0,0:Z0,toLowerCase_this:V1), Iret(i0:I0,toLowerCase_return:V0), vP(toLowerCase_return:V0,h_y:H0), vP(toLowerCase_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule main_relevant(h_source:H0,h_tainted:H1) :- main(_:I0,_:I1,h_source:H0,h_tainted:H1).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule recursedString_relevant(h_source:H0,h_tainted:H1,h_3:H2) :- main_relevant(h_source:H0,h_tainted:H1), recursedString(h_source:H0,h_tainted:H1,h_3:H2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule instrument(i:I0) :- main(i:I0,_:I1,h_source:H0,h_tainted:H1), main_relevant(h_source:H0,h_tainted:H1), !I_eq_I(i:I0,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule instrument(i:I1) :- main(_:I0,i:I1,h_source:H0,h_tainted:H1), main_relevant(h_source:H0,h_tainted:H1), !I_eq_I(i:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule instrument(i:I1) :- StringProp(_:I0,i:I1,h_x:H0,h_y:H1,h_z:H2), StringProp_relevant(h_x:H0,h_y:H1,h_z:H2), !I_eq_I(i:I1,3581:I2).
+   Updates: 1
+   Time: 0 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv0(i:I0) :- IE(i:I0,118:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,792:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,45:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,420:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv2(i:I0) :- IE(i:I0,805:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv3(i:I0) :- IE(i:I0,312:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1356:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1252:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1405:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,42:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1326:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1249:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,213:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,233:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1257:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1242:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1295:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv7(i:I0) :- IE(i:I0,1255:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- mI(_:M0,i:I0,121:N0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- IE(i:I0,1334:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- IE(i:I0,240:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv9(i:I0) :- IE(i:I0,1421:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv9(i0:I0), actual(i0:I0,0:Z0,next_this:V1), Iret(i0:I0,next_return:V0), vP(next_return:V0,h_y:H0), vP(next_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv10(i:I0) :- IE(i:I0,918:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv11(i:I0) :- IE(i:I0,339:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv12(i:I0) :- IE(i:I0,808:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv13(i:I0) :- IE(i:I0,768:M0).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp_relevant(h_x:H0,h_temp:H2,h_3:H3) :- recursedString_relevant(h_x:H0,_:H1,h_temp:H2), StringProp(_:I0,_:I1,h_x:H0,h_temp:H2,h_3:H3).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule instrument(i:I0) :- StringProp(i:I0,_:I1,h_x:H0,h_y:H1,h_z:H2), StringProp_relevant(h_x:H0,h_y:H1,h_z:H2), !I_eq_I(i:I0,3581:I2).
+   Updates: 1
+   Time: 1 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv7(i0:I0), actual(i0:I0,0:Z0,toString_this:V1), Iret(i0:I0,toString_return:V0), vP(toString_return:V0,h_y:H0), vP(toString_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 2 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv10(i0:I0), vP(java_lang_Number_arg_0:V0,h_x:H0), actual(i0:I0,1:Z0,java_lang_Number_arg_0:V0), actual(i0:I0,0:Z1,java_lang_Number_return:V1), vP(java_lang_Number_return:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 4 ms
+   Longest Iteration: 0 (0 ms)
+Rule main(i0:I0,i1:I1,h_source:H0,h_tainted:H1) :- inv0(i0:I0), Iret(i0:I0,get_return:V0), vP(get_return:V0,h_source:H0), recursedString(h_source:H0,h_tainted:H1,_:H2), inv1(i1:I1), vP(use_arg_0:V1,h_tainted:H1), actual(i1:I1,1:Z0,use_arg_0:V1).
+   Updates: 1
+   Time: 5 ms
+   Longest Iteration: 0 (0 ms)
+Rule recursedString(h_x:H0,h_y:H1,_) :- H_eq_H(h_x:H0,h_y:H1).
+   Updates: 1
+   Time: 5 ms
+   Longest Iteration: 0 (0 ms)
+Rule recursedString_relevant(h_temp:H2,h_y:H1,h_3:H3) :- recursedString_relevant(_:H0,h_y:H1,h_temp:H2), recursedString(h_temp:H2,h_y:H1,h_3:H3).
+   Updates: 4
+   Time: 8 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H1,h_y:H0,_) :- inv13(i0:I0), actual(i0:I0,0:Z0,toUpperCase_this:V1), Iret(i0:I0,toUpperCase_return:V0), vP(toUpperCase_return:V0,h_y:H0), vP(toUpperCase_this:V1,h_x:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 11 ms
+   Longest Iteration: 0 (0 ms)
+Rule StringProp(i0:I0,i1:I1,h_x:H0,h_y:H1,_) :- inv2(i0:I0), actual(i0:I0,0:Z0,append_this:V1), vP(append_arg_0:V0,h_x:H0), actual(i0:I0,1:Z1,append_arg_0:V0), vP(append_this:V1,h_y:H1), I_eq_I(i1:I1,3581:I2).
+   Updates: 1
+   Time: 15 ms
+   Longest Iteration: 0 (0 ms)
+Rule inv13(i:I0) :- IE(i:I0,277:M0).
+   Updates: 1
+   Time: 17 ms
+   Longest Iteration: 0 (0 ms)
+Rule recursedString(h_x:H0,h_y:H3,h_temp:H1) :- StringProp(_:I0,_:I1,h_x:H0,h_temp:H1,_:H2), recursedString(h_temp:H1,h_y:H3,_:H4).
+   Updates: 7
+   Time: 203 ms
+   Longest Iteration: 0 (0 ms)
+Saving results: SIZE OF main: 24.
+SIZE OF recursedString: 23893863.
+SIZE OF StringProp: 220274760.
+SIZE OF StringProp_relevant: 41140232.
+SIZE OF main_relevant: 3.
+SIZE OF recursedString_relevant: 14068.
+Dumping tuples for instrument
+Relation instrument: 351 nodes, 287.0 elements (I0)
+./results/instrument.tuples domains { I0 } = 351 nodes, 287.0 elements
+Done writing 287 lines.
+done. (22 ms)
+
+Mapping tuples to invocation sites...
+Done!
+Query StringProp State machine:
+  -> Nodes: [Node 0, Node 1, Node 2, Node 3, Node 4, Node 5, Node 6, Node 7, Node 8, Node 9, Node 10, Node 11, Node 12, Node 13, Node 14, Node 15, Node 16, Node 17, Node 18, Node 19, Node 20, Node 21, Node 22, Node 23, Node 24]
+  -> Terminals: [Node 1, Node 2, Node 3, Node 4, Node 5, Node 6, Node 7, Node 8, Node 9, Node 10, Node 11, Node 12, Node 13, Node 14, Node 15, Node 16, Node 17, Node 18, Node 20, Node 21, Node 22, Node 23, Node 24]
+  -> Edge from Node 0 to Node 1: Invoke append: [Status: Argument 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has minimum length  ]
+  -> Edge from Node 0 to Node 2: Invoke getChars: [Status: Argument 0 has reference to x , Status: Argument 3 has reference to y , Status: Arg List 4 has length  ]
+  -> Edge from Node 0 to Node 3: Invoke insert: [Status: Argument 0 has reference to y , Status: Argument 2 has reference to x , Status: Arg List 2 has length  ]
+  -> Edge from Node 0 to Node 4: Invoke replace: [Status: Argument 0 has reference to y , Status: Argument 3 has reference to x , Status: Arg List 3 has length  ]
+  -> Edge from Node 0 to Node 5: Invoke substring: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x ]
+  -> Edge from Node 0 to Node 6: Invoke <init>: [Status: Argument 0 has type java.lang.String , Status: Argument 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 7: Invoke <init>: [Status: Argument 0 has type java.lang.StringBuffer , Status: Argument 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 8: Invoke <init>: [Status: Argument 0 has type java.lang.StringBuilder , Status: Argument 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 9: Invoke toString: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x , Status: Arg List 0 has length  ]
+  -> Edge from Node 0 to Node 10: Invoke getBytes: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x ]
+  -> Edge from Node 0 to Node 11: Invoke copyValueOf: [Status: Value 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 12: Invoke concat: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 13: Invoke concat: [Status: Value 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 14: Invoke <init>: [Status: Argument 0 has type java.util.StringTokenizer , Status: Argument 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 15: Invoke nextToken: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x , Status: Arg List 0 has length  ]
+  -> Edge from Node 0 to Node 16: Invoke next: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x , Status: Arg List 0 has length  ]
+  -> Edge from Node 0 to Node 17: Invoke <init>: [Status: Argument 0 has type java.lang.Number , Status: Argument 0 has reference to y , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 0 to Node 18: Invoke trim: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x , Status: Arg List 0 has length  ]
+  -> Edge from Node 0 to Node 19: Invoke split: [Status: Value 0 has reference to z , Status: Argument 0 has reference to x ]
+  -> Edge from Node 19 to Node 20: ArrayLoad: [Status: Base 0 has reference to z , Status: Value 0 has reference to y ]
+  -> Edge from Node 0 to Node 21: Invoke toLowerCase: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x ]
+  -> Edge from Node 0 to Node 22: Invoke toUpperCase: [Status: Value 0 has reference to y , Status: Argument 0 has reference to x ]
+  -> Edge from Node 0 to Node 23: Invoke replaceAll: [Status: Value 0 has reference to y , Status: Argument 2 has reference to x , Status: Arg List 2 has length  ]
+  -> Edge from Node 0 to Node 24: Invoke replaceFirst: [Status: Value 0 has reference to y , Status: Argument 2 has reference to x , Status: Arg List 2 has length  ]
+
+Query main State machine:
+  -> Nodes: [Node 0, Node 1, Node 2, Node 3]
+  -> Terminals: [Node 3]
+  -> Edge from Node 0 to Node 1: Invoke get: [Status: Value 0 has type java.lang.String , Status: Value 0 has reference to source , Status: Argument 0 has type sample.UserControlledType ]
+  -> Edge from Node 1 to Node 2: [Invocation: dest=[tainted] name=recursedString args=[source]]
+  -> Edge from Node 2 to Node 3: Invoke use: [Status: Argument 0 has type sample.DummySql , Status: Argument 1 has type java.lang.String , Status: Argument 1 has reference to tainted , Status: Arg List 1 has length  ]
+
+Query recursedString State machine:
+  -> Nodes: [Node 0, Node 1, Node 2, Node 3]
+  -> Terminals: [Node 1, Node 3]
+  -> Edge from Node 0 to Node 1: [Unify: dest=[y] src=[x]]
+  -> Edge from Node 0 to Node 2: [Invocation: dest=[temp] name=StringProp args=[x]]
+  -> Edge from Node 2 to Node 3: [Invocation: dest=[y] name=recursedString args=[temp]]
+
+
+Jar 1/1: /home/ubuntu/PQL-0.2/examples/sample/javabdd_0.1.jar
+Could not analyze NQueens.main([Ljava/lang/String;)V
+Class 1/11: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter$Range.class
+Could not analyze sample.QuoteQuoter$Range.<init>(II)V
+Class 2/11: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter.class
+Could not analyze sample.QuoteQuoter.<init>()V
+Could not analyze sample.QuoteQuoter.safeUse([Ljava/lang/String;[Ljava/lang/String;[Lsample/SystemCriticalSink;)V
+Class 3/11: /home/ubuntu/PQL-0.2/examples/sample/Test.class
+Could not analyze sample.Test.<init>()V
+Could not analyze sample.Test.main([Ljava/lang/String;)V
+Could not analyze sample.Test.<clinit>()V
+Class 4/11: /home/ubuntu/PQL-0.2/examples/sample/CompleteSql.class
+Could not analyze sample.CompleteSql.<init>()V
+Could not analyze sample.CompleteSql.main([Ljava/lang/String;)V
+Could not analyze sample.CompleteSql.<clinit>()V
+Class 5/11: /home/ubuntu/PQL-0.2/examples/sample/DummySql.class
+Could not analyze sample.DummySql.<init>()V
+Class 6/11: /home/ubuntu/PQL-0.2/examples/sample/UserControlledType.class
+Could not analyze sample.UserControlledType.<init>(Z)V
+Could not analyze sample.UserControlledType.get(Ljava/lang/String;)Ljava/lang/String;
+Class 7/11: /home/ubuntu/PQL-0.2/examples/sample/Sample.class
+Could not analyze sample.Sample.<init>()V
+Could not analyze sample.Sample.main([Ljava/lang/String;)V
+Could not analyze sample.Sample.<clinit>()V
+Class 8/11: /home/ubuntu/PQL-0.2/examples/sample/UserProvidedQuery.class
+Could not analyze sample.UserProvidedQuery.<init>(Z)V
+Class 9/11: /home/ubuntu/PQL-0.2/examples/sample/SystemCriticalSink.class
+Could not analyze sample.SystemCriticalSink.<init>()V
+Class 10/11: /home/ubuntu/PQL-0.2/examples/sample/Sample1.class
+Could not analyze sample.Sample1.<init>()V
+Class 11/11: /home/ubuntu/PQL-0.2/examples/sample/RecursedControlledType.class
+Could not analyze sample.RecursedControlledType.<init>(Z)V
+20 methods could not pass JustIce.
+Base:     9 classes, 10 methods, 74 points, 86 directives.
+Filtered: 2 classes, 2 methods, 24 points, 24 directives.
+Source directory: /home/ubuntu/PQL-0.2/examples/sample
+Destination directory: /home/ubuntu/PQL-0.2/examples/inst/sample
+Mirroring original application...
+Searching for jarfiles...
+1 jarfiles found.
+Checking jarfiles for relevance to query...
+0 jarfiles are relevant.
+Searching for loose classes...
+11 classes found.
+Checking classfiles for relevance to query...
+2 classfiles are relevant.
+SUBSYSTEM RECEIVES:
+SELECT * FROM logins WHERE name='application' AND password = 'password'
+USER PROVIDES "dbadmin" FOR KEY "name"
+USER PROVIDES "some string" FOR KEY "password"
+SUBSYSTEM RECEIVES:
+SELECT * FROM logins WHERE name='dbadmin' AND password = 'some string'
+Match achieved: {tainted=Obj:java.lang.String@32782069, $1$=Obj:java.lang.Object@30744772, source=Obj:java.lang.String@28057572}
+	at sample.CompleteSql.main(CompleteSql.java:11)
+Match achieved: {tainted=Obj:java.lang.String@32782069, $1$=Obj:java.lang.Object@21061094, source=Obj:java.lang.String@25174220}
+	at sample.CompleteSql.main(CompleteSql.java:11)
+User-controlled attack
+USER PROVIDES "dbadmin" FOR KEY "name"
+USER PROVIDES "whatever' OR '1' = '1" FOR KEY "password"
+SUBSYSTEM RECEIVES:
+SELECT * FROM logins WHERE name='dbadmin' AND password = 'whatever' OR '1' = '1'
+Match achieved: {tainted=Obj:java.lang.String@21219507, $1$=Obj:java.lang.Object@8831815, source=Obj:java.lang.String@11120133}
+	at sample.CompleteSql.main(CompleteSql.java:14)
+Match achieved: {tainted=Obj:java.lang.String@21219507, $1$=Obj:java.lang.Object@21061094, source=Obj:java.lang.String@25174220}
+	at sample.CompleteSql.main(CompleteSql.java:14)
+Match achieved: {tainted=Obj:java.lang.String@21219507, $1$=Obj:java.lang.Object@7901508, source=Obj:java.lang.String@25174220}
+	at sample.CompleteSql.main(CompleteSql.java:14)
+Final match count: 5

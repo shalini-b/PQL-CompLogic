@@ -1,0 +1,4 @@
+<sample.UserControlledType>
+get(Ljava/lang/String;)Ljava/lang/String;: 52M3[0,1] 56M3[0,1] 61M3[0,1] 65M3[0,1] 70M3[0,1] 73M11[r,0]
+<sample.CompleteSql>
+main([Ljava/lang/String;)V: 38M3[0,1] 44M0[r,r,0] 47M3[0,1] 52M3[0,1] 58M0[r,r,0] 61M3[0,1] 66M3[0,1] 69M11[r,0] 72M2[0,1,1] 95M3[0,1] 101M0[r,r,0] 104M3[0,1] 109M3[0,1] 115M0[r,r,0] 118M3[0,1] 123M3[0,1] 126M11[r,0] 129M2[0,1,1]

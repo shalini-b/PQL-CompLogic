@@ -1,0 +1,47 @@
+query main ()
+uses
+  object java.lang.String source, tainted;
+matches {
+	source = sample.UserControlledType.get(...);
+	tainted := recursedString (source);
+	sample.DummySql.use(tainted);
+}
+executes net.sf.pql.matcher.Util.printStackTrace(*);
+
+query recursedString (object * x)
+returns object * y;
+uses object * temp;
+matches {
+    y := x
+  | { temp := StringProp(x); y := recursedString(temp); }
+}
+
+
+query StringProp (object * x)
+returns object * y;
+uses object * z;
+matches {
+  y.append(x, ...)
+| x.getChars(_, _, y, _)
+| y.insert(_, x)
+| y.replace(_, _, x)
+| y = x.substring(...)
+| y = new java.lang.String(x)
+| y = new java.lang.StringBuffer(x)
+| y = new java.lang.StringBuilder(x)
+| y = x.toString()
+| y = x.getBytes(...)
+| y = _.copyValueOf(x)
+| y = x.concat(_)
+| y = _.concat(x)
+| y = new java.util.StringTokenizer(x)
+| y = x.nextToken()
+| y = x.next()
+| y = new java.lang.Number(x)
+| y = x.trim()
+| { z = x.split(...); y = z[]; }
+| y = x.toLowerCase(...)
+| y = x.toUpperCase(...)
+| y = _.replaceAll(_, x)
+| y = _.replaceFirst(_, x);
+}

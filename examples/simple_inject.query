@@ -1,0 +1,21 @@
+query main ()
+uses
+  object java.lang.String source, tempvar;
+matches {
+	source = sample.RecursedControlledType.get(...);
+	tempvar := recurseString (source);
+	sample.DummySql.use(tempvar);
+}
+executes net.sf.pql.matcher.Util.printStackTrace(*);
+
+
+query recurseString (object * x)
+returns object * y;
+uses object * temp;
+matches {
+    y := x
+  | { temp.append(x); y := recurseString(temp); }
+  | { temp = x.toString(); y := recurseString(temp); }
+  | { temp = new java.lang.StringBuffer(x); y := recurseString(temp); }
+  | { temp = new java.lang.StringBuilder(x); y := recurseString(temp); }
+}

@@ -1,0 +1,17 @@
+query derivedStream (object java.io.InputStream x)
+returns object java.io.InputStream d;
+uses object java.io.InputStream t;
+matches {
+    d := x 
+  | {t = new InputStream(x); d := derivedStream(t)}
+}
+
+query main() 
+returns method * m; 
+uses
+    object InputStream x, y; object Object v;
+matches {
+    y := derivedStream(x); 
+    v = y.readObject(); 
+}
+executes Util.PrintStackTrace(*);

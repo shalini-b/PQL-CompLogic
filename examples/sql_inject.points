@@ -1,0 +1,19 @@
+<sample.UserControlledType>
+get(Ljava/lang/String;)Ljava/lang/String;: 52M3[0,1] 56M3[0,1] 61M3[0,1] 65M3[0,1] 70M3[0,1] 73M11[r,0]
+<sample.Sample1>
+execute()V: 14M8[0,0,1] 14M9[0,0,1] 14M10[0,0,1] 14M16[0,0,1] 14M19[0,0,1]
+<org.sf.javabdd.BDDException>
+<init>(Ljava/lang/String;)V: 2M8[0,0,1] 2M9[0,0,1] 2M10[0,0,1] 2M16[0,0,1] 2M19[0,0,1]
+<sample.Test>
+main([Ljava/lang/String;)V: 27M0[r,r,0] 30M2[0,1,1]
+<NQueens>
+build(II)V: 47AL22[b,r] 49AL22[b,r] 54AL22[b,r] 57AL22[b,r] 95AL22[b,r] 97AL22[b,r] 103AL22[b,r] 105AL22[b,r] 165AL22[b,r] 167AL22[b,r] 173AL22[b,r] 176AL22[b,r] 236AL22[b,r] 238AL22[b,r] 244AL22[b,r] 247AL22[b,r]
+main([Ljava/lang/String;)V: 17AL22[b,r] 109AL22[b,r] 167AL22[b,r] 169AL22[b,r] 225M3[0,1] 234M3[0,1] 241M11[r,0] 290M3[0,1] 305M3[0,1] 308M11[r,0]
+<sample.QuoteQuoter>
+safeUse([Ljava/lang/String;[Ljava/lang/String;[Lsample/SystemCriticalSink;)V: 2AL22[b,r] 6AL22[b,r] 32AL22[b,r] 57AL22[b,r] 144M18[r,0] 192M3[0,1] 203M3[0,1] 217M11[r,0] 220M2[0,1,1]
+<sample.Sample>
+main([Ljava/lang/String;)V: 12M0[r,r,0] 18M0[r,r,0] 34M3[0,1] 38M3[0,1] 43M3[0,1] 47M3[0,1] 52M3[0,1] 55M11[r,0] 58M2[0,1,1]
+<sample.CompleteSql>
+main([Ljava/lang/String;)V: 23M2[0,1,1] 38M3[0,1] 44M0[r,r,0] 47M3[0,1] 52M3[0,1] 58M0[r,r,0] 61M3[0,1] 66M3[0,1] 69M11[r,0] 72M2[0,1,1] 95M3[0,1] 101M0[r,r,0] 104M3[0,1] 109M3[0,1] 115M0[r,r,0] 118M3[0,1] 123M3[0,1] 126M11[r,0] 129M2[0,1,1]
+<org.sf.javabdd.BuDDyFactory>
+init(II)Lorg/sf/javabdd/BDDFactory;: 12M8[0,0,1] 12M9[0,0,1] 12M10[0,0,1] 12M16[0,0,1] 12M19[0,0,1]

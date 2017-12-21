@@ -1,0 +1,9 @@
+query main ()
+uses
+  object java.lang.String source;
+matches {
+	source = sample.UserProvidedQuery.get(...);
+	sample.DummySql.use(source);
+}
+executes net.sf.pql.matcher.Util.printStackTrace(*);
+

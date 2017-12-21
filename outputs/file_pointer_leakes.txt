@@ -1,0 +1,54 @@
+Query main State machine:
+  -> Nodes: [Node 0, Node 1, Node 2, Node 3]
+  -> Terminals: [Node 3]
+  -> Edge from Node 0 to Node 1: StartMethod _: [Status: Call ID 0 has reference to $main_id ]
+  -> Edge from Node 1 to Node 2: Invoke <init>: [Status: Argument 0 has type java.io.FileInputStream , Status: Argument 0 has type java.io.InputStream , Status: Argument 0 has reference to in ]
+  -> Edge from Node 2 to Node 3: EndProgram: []
+
+Jar 1/1: /home/ubuntu/PQL-0.2/examples/sample/javabdd_0.1.jar
+Could not analyze NQueens.main([Ljava/lang/String;)V
+Class 1/9: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter$Range.class
+Could not analyze sample.QuoteQuoter$Range.<init>(II)V
+Class 2/9: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter.class
+Could not analyze sample.QuoteQuoter.<init>()V
+Could not analyze sample.QuoteQuoter.safeUse([Ljava/lang/String;[Ljava/lang/String;[Lsample/SystemCriticalSink;)V
+Class 3/9: /home/ubuntu/PQL-0.2/examples/sample/Test.class
+Could not analyze sample.Test.<init>()V
+Could not analyze sample.Test.main([Ljava/lang/String;)V
+Could not analyze sample.Test.<clinit>()V
+Class 4/9: /home/ubuntu/PQL-0.2/examples/sample/DummySql.class
+Could not analyze sample.DummySql.<init>()V
+Class 5/9: /home/ubuntu/PQL-0.2/examples/sample/UserControlledType.class
+Could not analyze sample.UserControlledType.<init>(Z)V
+Could not analyze sample.UserControlledType.get(Ljava/lang/String;)Ljava/lang/String;
+Class 6/9: /home/ubuntu/PQL-0.2/examples/sample/Sample.class
+Could not analyze sample.Sample.<init>()V
+Could not analyze sample.Sample.main([Ljava/lang/String;)V
+Could not analyze sample.Sample.<clinit>()V
+Class 7/9: /home/ubuntu/PQL-0.2/examples/sample/UserProvidedQuery.class
+Could not analyze sample.UserProvidedQuery.<init>(Z)V
+Class 8/9: /home/ubuntu/PQL-0.2/examples/sample/SystemCriticalSink.class
+Could not analyze sample.SystemCriticalSink.<init>()V
+Class 9/9: /home/ubuntu/PQL-0.2/examples/sample/Sample1.class
+Could not analyze sample.Sample1.<init>()V
+16 methods could not pass JustIce.
+Base:     17 classes, 28 methods, 47 points, 47 directives.
+Source directory: /home/ubuntu/PQL-0.2/examples/sample
+Destination directory: /home/ubuntu/PQL-0.2/examples/inst/sample
+Mirroring original application...
+Searching for jarfiles...
+1 jarfiles found.
+Checking jarfiles for relevance to query...
+1 jarfiles are relevant.
+Searching for loose classes...
+9 classes found.
+Checking classfiles for relevance to query...
+9 classfiles are relevant.
+Instrumenting: /home/ubuntu/PQL-0.2/examples/inst/sample/javabdd_0.1.jar
+InputStream file is not closes case : 
+Match achieved: {in=Obj:java.io.FileInputStream@15041882}
+	at sample.Sample1.execute(Sample1.java:16)
+	at sample.Sample1.main(Sample1.java:9)
+ABCD
+Finished test 
+Final match count: 1

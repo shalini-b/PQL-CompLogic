@@ -1,0 +1,70 @@
+Query main State machine:
+  -> Nodes: [Node 0, Node 1, Node 2, Node 3]
+  -> Terminals: [Node 3]
+  -> Edge from Node 0 to Node 1: Invoke get: [Status: Value 0 has type java.lang.String , Status: Value 0 has reference to source , Status: Argument 0 has type sample.RecursedControlledType ]
+  -> Edge from Node 1 to Node 2: [Invocation: dest=[tempvar] name=recurseString args=[source]]
+  -> Edge from Node 2 to Node 3: Invoke use: [Status: Argument 0 has type sample.DummySql , Status: Argument 1 has type java.lang.String , Status: Argument 1 has reference to tempvar , Status: Arg List 1 has length  ]
+
+Query recurseString State machine:
+  -> Nodes: [Node 0, Node 1, Node 2, Node 3, Node 4, Node 5, Node 6, Node 7, Node 8, Node 9]
+  -> Terminals: [Node 1, Node 3, Node 5, Node 7, Node 9]
+  -> Edge from Node 0 to Node 1: [Unify: dest=[y] src=[x]]
+  -> Edge from Node 0 to Node 2: Invoke append: [Status: Argument 0 has reference to temp , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 2 to Node 3: [Invocation: dest=[y] name=recurseString args=[temp]]
+  -> Edge from Node 0 to Node 4: Invoke toString: [Status: Value 0 has reference to temp , Status: Argument 0 has reference to x , Status: Arg List 0 has length  ]
+  -> Edge from Node 4 to Node 5: [Invocation: dest=[y] name=recurseString args=[temp]]
+  -> Edge from Node 0 to Node 6: Invoke <init>: [Status: Argument 0 has type java.lang.StringBuffer , Status: Argument 0 has reference to temp , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 6 to Node 7: [Invocation: dest=[y] name=recurseString args=[temp]]
+  -> Edge from Node 0 to Node 8: Invoke <init>: [Status: Argument 0 has type java.lang.StringBuilder , Status: Argument 0 has reference to temp , Status: Argument 1 has reference to x , Status: Arg List 1 has length  ]
+  -> Edge from Node 8 to Node 9: [Invocation: dest=[y] name=recurseString args=[temp]]
+
+
+Jar 1/1: /home/ubuntu/PQL-0.2/examples/sample/javabdd_0.1.jar
+Could not analyze NQueens.main([Ljava/lang/String;)V
+Class 1/10: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter$Range.class
+Could not analyze sample.QuoteQuoter$Range.<init>(II)V
+Class 2/10: /home/ubuntu/PQL-0.2/examples/sample/QuoteQuoter.class
+Could not analyze sample.QuoteQuoter.<init>()V
+Could not analyze sample.QuoteQuoter.safeUse([Ljava/lang/String;[Ljava/lang/String;[Lsample/SystemCriticalSink;)V
+Class 3/10: /home/ubuntu/PQL-0.2/examples/sample/Test.class
+Could not analyze sample.Test.<init>()V
+Could not analyze sample.Test.main([Ljava/lang/String;)V
+Could not analyze sample.Test.<clinit>()V
+Class 4/10: /home/ubuntu/PQL-0.2/examples/sample/DummySql.class
+Could not analyze sample.DummySql.<init>()V
+Class 5/10: /home/ubuntu/PQL-0.2/examples/sample/UserControlledType.class
+Could not analyze sample.UserControlledType.<init>(Z)V
+Could not analyze sample.UserControlledType.get(Ljava/lang/String;)Ljava/lang/String;
+Class 6/10: /home/ubuntu/PQL-0.2/examples/sample/Sample.class
+Could not analyze sample.Sample.<init>()V
+Could not analyze sample.Sample.main([Ljava/lang/String;)V
+Could not analyze sample.Sample.<clinit>()V
+Class 7/10: /home/ubuntu/PQL-0.2/examples/sample/UserProvidedQuery.class
+Could not analyze sample.UserProvidedQuery.<init>(Z)V
+Class 8/10: /home/ubuntu/PQL-0.2/examples/sample/SystemCriticalSink.class
+Could not analyze sample.SystemCriticalSink.<init>()V
+Class 9/10: /home/ubuntu/PQL-0.2/examples/sample/Sample1.class
+Could not analyze sample.Sample1.<init>()V
+Class 10/10: /home/ubuntu/PQL-0.2/examples/sample/RecursedControlledType.class
+Could not analyze sample.RecursedControlledType.<init>(Z)V
+17 methods could not pass JustIce.
+Base:     8 classes, 8 methods, 30 points, 33 directives.
+Source directory: /home/ubuntu/PQL-0.2/examples/sample
+Destination directory: /home/ubuntu/PQL-0.2/examples/inst/sample
+Mirroring original application...
+Searching for jarfiles...
+1 jarfiles found.
+Checking jarfiles for relevance to query...
+1 jarfiles are relevant.
+Searching for loose classes...
+10 classes found.
+Checking classfiles for relevance to query...
+5 classfiles are relevant.
+Instrumenting: /home/ubuntu/PQL-0.2/examples/inst/sample/javabdd_0.1.jar
+SUBSYSTEM RECEIVES:
+SELECT * FROM logins WHERE name='name' AND password = 'name'
+Match achieved: {$1$=Obj:java.lang.Object@30432385, source=Obj:java.lang.String@9519074, tempvar=Obj:java.lang.String@970110}
+	at sample.Sample.main(Sample.java:9)
+Match achieved: {$1$=Obj:java.lang.Object@19224790, source=Obj:java.lang.String@9519074, tempvar=Obj:java.lang.String@970110}
+	at sample.Sample.main(Sample.java:9)
+Final match count: 2

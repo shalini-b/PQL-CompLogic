@@ -1,0 +1,632 @@
+DummyMethod
+boolean
+BASIC_LATIN
+LATIN_1_SUPPLEMENT
+LATIN_EXTENDED_A
+LATIN_EXTENDED_B
+IPA_EXTENSIONS
+SPACING_MODIFIER_LETTERS
+COMBINING_DIACRITICAL_MARKS
+GREEK
+CYRILLIC
+ARMENIAN
+HEBREW
+ARABIC
+DEVANAGARI
+BENGALI
+GURMUKHI
+GUJARATI
+ORIYA
+TAMIL
+TELUGU
+KANNADA
+MALAYALAM
+THAI
+LAO
+TIBETAN
+GEORGIAN
+HANGUL_JAMO
+LATIN_EXTENDED_ADDITIONAL
+GREEK_EXTENDED
+GENERAL_PUNCTUATION
+SUPERSCRIPTS_AND_SUBSCRIPTS
+CURRENCY_SYMBOLS
+COMBINING_MARKS_FOR_SYMBOLS
+LETTERLIKE_SYMBOLS
+NUMBER_FORMS
+ARROWS
+MATHEMATICAL_OPERATORS
+MISCELLANEOUS_TECHNICAL
+CONTROL_PICTURES
+OPTICAL_CHARACTER_RECOGNITION
+ENCLOSED_ALPHANUMERICS
+BOX_DRAWING
+BLOCK_ELEMENTS
+GEOMETRIC_SHAPES
+MISCELLANEOUS_SYMBOLS
+DINGBATS
+CJK_SYMBOLS_AND_PUNCTUATION
+HIRAGANA
+KATAKANA
+BOPOMOFO
+HANGUL_COMPATIBILITY_JAMO
+KANBUN
+ENCLOSED_CJK_LETTERS_AND_MONTHS
+CJK_COMPATIBILITY
+CJK_UNIFIED_IDEOGRAPHS
+HANGUL_SYLLABLES
+PRIVATE_USE_AREA
+CJK_COMPATIBILITY_IDEOGRAPHS
+ALPHABETIC_PRESENTATION_FORMS
+ARABIC_PRESENTATION_FORMS_A
+COMBINING_HALF_MARKS
+CJK_COMPATIBILITY_FORMS
+SMALL_FORM_VARIANTS
+ARABIC_PRESENTATION_FORMS_B
+HALFWIDTH_AND_FULLWIDTH_FORMS
+SPECIALS
+SURROGATES_AREA
+SYRIAC
+THAANA
+SINHALA
+MYANMAR
+ETHIOPIC
+CHEROKEE
+UNIFIED_CANADIAN_ABORIGINAL_SYLLABICS
+OGHAM
+RUNIC
+KHMER
+MONGOLIAN
+BRAILLE_PATTERNS
+CJK_RADICALS_SUPPLEMENT
+KANGXI_RADICALS
+IDEOGRAPHIC_DESCRIPTION_CHARACTERS
+BOPOMOFO_EXTENDED
+CJK_UNIFIED_IDEOGRAPHS_EXTENSION_A
+YI_SYLLABLES
+YI_RADICALS
+CYRILLIC_SUPPLEMENTARY
+TAGALOG
+HANUNOO
+BUHID
+TAGBANWA
+LIMBU
+TAI_LE
+KHMER_SYMBOLS
+PHONETIC_EXTENSIONS
+MISCELLANEOUS_MATHEMATICAL_SYMBOLS_A
+SUPPLEMENTAL_ARROWS_A
+SUPPLEMENTAL_ARROWS_B
+MISCELLANEOUS_MATHEMATICAL_SYMBOLS_B
+SUPPLEMENTAL_MATHEMATICAL_OPERATORS
+MISCELLANEOUS_SYMBOLS_AND_ARROWS
+KATAKANA_PHONETIC_EXTENSIONS
+YIJING_HEXAGRAM_SYMBOLS
+VARIATION_SELECTORS
+LINEAR_B_SYLLABARY
+LINEAR_B_IDEOGRAMS
+AEGEAN_NUMBERS
+OLD_ITALIC
+GOTHIC
+UGARITIC
+DESERET
+SHAVIAN
+OSMANYA
+CYPRIOT_SYLLABARY
+BYZANTINE_MUSICAL_SYMBOLS
+MUSICAL_SYMBOLS
+TAI_XUAN_JING_SYMBOLS
+MATHEMATICAL_ALPHANUMERIC_SYMBOLS
+CJK_UNIFIED_IDEOGRAPHS_EXTENSION_B
+CJK_COMPATIBILITY_IDEOGRAPHS_SUPPLEMENT
+TAGS
+VARIATION_SELECTORS_SUPPLEMENT
+SUPPLEMENTARY_PRIVATE_USE_AREA_A
+SUPPLEMENTARY_PRIVATE_USE_AREA_B
+HIGH_SURROGATES
+HIGH_PRIVATE_USE_SURROGATES
+LOW_SURROGATES
+Basic Latin
+BasicLatin
+Latin-1 Supplement
+Latin-1Supplement
+Latin Extended-A
+LatinExtended-A
+Latin Extended-B
+LatinExtended-B
+IPA Extensions
+IPAExtensions
+Spacing Modifier Letters
+SpacingModifierLetters
+Combining Diacritical Marks
+CombiningDiacriticalMarks
+Greek and Coptic
+GreekandCoptic
+Hangul Jamo
+HangulJamo
+Latin Extended Additional
+LatinExtendedAdditional
+Greek Extended
+GreekExtended
+General Punctuation
+GeneralPunctuation
+Superscripts and Subscripts
+SuperscriptsandSubscripts
+Currency Symbols
+CurrencySymbols
+Combining Diacritical Marks for Symbols
+CombiningDiacriticalMarksforSymbols
+Combining Marks for Symbols
+CombiningMarksforSymbols
+Letterlike Symbols
+LetterlikeSymbols
+Number Forms
+NumberForms
+Mathematical Operators
+MathematicalOperators
+Miscellaneous Technical
+MiscellaneousTechnical
+Control Pictures
+ControlPictures
+Optical Character Recognition
+OpticalCharacterRecognition
+Enclosed Alphanumerics
+EnclosedAlphanumerics
+Box Drawing
+BoxDrawing
+Block Elements
+BlockElements
+Geometric Shapes
+GeometricShapes
+Miscellaneous Symbols
+MiscellaneousSymbols
+CJK Symbols and Punctuation
+CJKSymbolsandPunctuation
+Hangul Compatibility Jamo
+HangulCompatibilityJamo
+Enclosed CJK Letters and Months
+EnclosedCJKLettersandMonths
+CJK Compatibility
+CJKCompatibility
+CJK Unified Ideographs
+CJKUnifiedIdeographs
+Hangul Syllables
+HangulSyllables
+Private Use Area
+PrivateUseArea
+CJK Compatibility Ideographs
+CJKCompatibilityIdeographs
+Alphabetic Presentation Forms
+AlphabeticPresentationForms
+Arabic Presentation Forms-A
+ArabicPresentationForms-A
+Combining Half Marks
+CombiningHalfMarks
+CJK Compatibility Forms
+CJKCompatibilityForms
+Small Form Variants
+SmallFormVariants
+Arabic Presentation Forms-B
+ArabicPresentationForms-B
+Halfwidth and Fullwidth Forms
+HalfwidthandFullwidthForms
+Unified Canadian Aboriginal Syllabics
+UnifiedCanadianAboriginalSyllabics
+Braille Patterns
+BraillePatterns
+CJK Radicals Supplement
+CJKRadicalsSupplement
+Kangxi Radicals
+KangxiRadicals
+Ideographic Description Characters
+IdeographicDescriptionCharacters
+Bopomofo Extended
+BopomofoExtended
+CJK Unified Ideographs Extension A
+CJKUnifiedIdeographsExtensionA
+Yi Syllables
+YiSyllables
+Yi Radicals
+YiRadicals
+Cyrillic Supplementary
+CyrillicSupplementary
+Tai Le
+TaiLe
+Khmer Symbols
+KhmerSymbols
+Phonetic Extensions
+PhoneticExtensions
+Miscellaneous Mathematical Symbols-A
+MiscellaneousMathematicalSymbols-A
+Supplemental Arrows-A
+SupplementalArrows-A
+Supplemental Arrows-B
+SupplementalArrows-B
+Miscellaneous Mathematical Symbols-B
+MiscellaneousMathematicalSymbols-B
+Supplemental Mathematical Operators
+SupplementalMathematicalOperators
+Miscellaneous Symbols and Arrows
+MiscellaneousSymbolsandArrows
+Katakana Phonetic Extensions
+KatakanaPhoneticExtensions
+Yijing Hexagram Symbols
+YijingHexagramSymbols
+Variation Selectors
+VariationSelectors
+Linear B Syllabary
+LinearBSyllabary
+Linear B Ideograms
+LinearBIdeograms
+Aegean Numbers
+AegeanNumbers
+Old Italic
+OldItalic
+Cypriot Syllabary
+CypriotSyllabary
+Byzantine Musical Symbols
+ByzantineMusicalSymbols
+Musical Symbols
+MusicalSymbols
+Tai Xuan Jing Symbols
+TaiXuanJingSymbols
+Mathematical Alphanumeric Symbols
+MathematicalAlphanumericSymbols
+CJK Unified Ideographs Extension B
+CJKUnifiedIdeographsExtensionB
+CJK Compatibility Ideographs Supplement
+CJKCompatibilityIdeographsSupplement
+Variation Selectors Supplement
+VariationSelectorsSupplement
+Supplementary Private Use Area-A
+SupplementaryPrivateUseArea-A
+Supplementary Private Use Area-B
+SupplementaryPrivateUseArea-B
+High Surrogates
+HighSurrogates
+High Private Use Surrogates
+HighPrivateUseSurrogates
+Low Surrogates
+LowSurrogates
+char
+   0@P`p                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                                "$$$$$$$$$$$$&(*,............024  6             8::<>@BDFHJLNPRTVVVVVVVVVVVXVVVZ\\\\\\\\\\\^\\\`bbbbbbbbbbbbbbbbbbbbbbbbdbbbfhhhhhhhjbbbbbbbbbbbbbbbbbbbbbbblhhjnbbprtvxzr|~b   bbb   b   h b b        hhhhhhh bbbbbbbbb  b bbbb bbbbbbbbb                                                                                                                                                               VVVVVVVV VVVV   \\\\\\\\ \\\\      bbbbbbbbbbbb     b          VVVVVVVVVVVVVVVV\\\\\\\\\\\\\\\\        b    bbbbbbbbbbb hhhhhh bbbbbbbbbbbbbbbbbbb b   bbbbbbbb                                                                                                                               <                                                                                                                                                                                                                                                                                                                 :                                                                                                                                                                                                                                                <<                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <<<<<<<<<<<<<<<<                                                                bbbbbbbbbbb     bbbbbbbbbbbbb                                                                                                                                                                                             HHH                   :::::::::                                       < < <      <   <<<           <            RRRRRR                           << <<  < <<< <<<<<<<<<<<<<<< <  <<<<<<<<<<<<<<<                                                                                                                                      <<<<  <<<<<<<<<< <<<  <<<<<                                    <<<<<<<<<<< <<               <<<<<<<<<<<<        <<<             <<<<<                                                                                           <<<<<<<<<<< <<<< <<<<<<<<<<<<<<<<<<<<<<<<<<<    <<<<<<<<<<<< <<<<<<<<<< <<<<<<< <<<<<<<<<       <                < << <<<<<<<<<<<<<< <<<<<<<<<<<<<<<<<  <   <<<  <<<                        <<<<<<<<<<<< <<<<<<                                                                                                                                                                                                                                                 <<<<<<<         <<<<<<<<<<<<< <<<<<<<<<<<<      <<<<<<<<<<<             <<<<<<           <                 <   <                                                                                                                                                              RR              <          RRRRRRR      <<                                    <                  <                                                        <<<<<<<<                                                                                                                                                                                                                                                                                                                                                ,............02                                                                 :             < 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   B B B B A A A A                                                     j j i i                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     !"#$%&'(  ) *+,#-./01234567                                                                                                                                                                                                                                                                                                                                
+                                                                                                                                                                                                """"""""""""""""""""$$$$$$$$$$$$$$$$$$$$                        &&&&&           ((( *((((((((((((((((((((((,* *,                                                  .02 .446888:222<>222               22                         @@@@@@@@@@@@@@@@@@@@@@@@@@@B    DDDDDDDDDDDDDFFFFFFFFFFFFFDDDDDDDDDDDDDFFFHFFFFFFFFFDDDDDDDDDDDDDFFFFFFFFFFFFFJD JLJLDJDDDDFFNNFFFNFFFFFDDDDDDDDDDDDDFFFFFFFFFFFFFDLDJLDDDJDDDJFFFFFFFFFFFFFDLDJDDJJ DDDJFFFFFFFFFFFFFDDDDDDDDDDDDDFFFFFFFFFFFFFDDDDDDDFFFFFFFFFDFFFFFFFFFFFFFDDDDDDDDDDDDDFFFFFFFFFFFFFDDDDDDDDFF  DDDDDDDDDDDDPFFFFFFFFFFFFRFFFDDDDDDDDDDDDPFFFFFFFFFFFFRFFFDDDDDDDDDDDDPFFFFFFFFFFFFRFFFDDDDDDDDDDDDPFFFFFFFFFFFFRFFFDDDDDDDDDDDDPFFFFFFFFFFFFRFFF  TTTTTVVVVVXXXXXZZZZZ\\\\\
+                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                0                                               
+                                                                
+            
+        0000000@                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                                                
+                
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+lt
+tr
+az
+double
+float
+int
+long
+value
+count
+shared
+enableContextClassLoaderOverride
+Reference Handler
+suppressAccessChecks
+sun.net.inetaddr.ttl
+sun.net.inetaddr.negative.ttl
+java.net.preferIPv6Addresses
+net
+sun.net.spi.nameservice.provider.
+default
+trustProxy
+sun.net.trustNameService
+java.security.debug
+java.security.auth.debug
+,
+help
+policy
+
+en
+fr
+de
+it
+ja
+ko
+zh
+CN
+TW
+FR
+DE
+IT
+JP
+KR
+GB
+US
+CA
+seed
+nextNextGaussian
+haveNextNextGaussian
+Cn
+Lu
+Ll
+Lt
+Lm
+Lo
+Mn
+Me
+Mc
+Nd
+Nl
+No
+Zs
+Zl
+Zp
+Cc
+Cf
+Co
+Cs
+Pd
+Ps
+Pe
+Pc
+Po
+Sm
+Sc
+Sk
+So
+L
+M
+N
+Z
+C
+P
+S
+LD
+L1
+all
+ASCII
+Alnum
+Alpha
+Blank
+Cntrl
+Digit
+Graph
+Lower
+Print
+Punct
+Space
+Upper
+XDigit
+javaLowerCase
+javaUpperCase
+javaTitleCase
+javaDigit
+javaDefined
+javaLetter
+javaLetterOrDigit
+javaJavaIdentifierStart
+javaJavaIdentifierPart
+javaUnicodeIdentifierStart
+javaUnicodeIdentifierPart
+javaIdentifierIgnorable
+javaSpaceChar
+javaWhitespace
+javaISOControl
+javaMirrored
+line.separator
+SELECT * FROM logins WHERE name='application' AND password = 'password'
+SELECT * FROM logins WHERE name='
+name
+' AND password = '
+password
+'
+User-controlled attack
+([-+])?0[xX](((\p{XDigit}+)\.?)|((\p{XDigit}*)\.(\p{XDigit}+)))[pP]([-+])?(\p{Digit}+)[fFdD]?
+showWindowWithoutWarningBanner
+accessClipboard
+accessEventQueue
+readDisplayPixels
+createRobot
+watchMousePointer
+setWindowAlwaysOnTop
+listenToAllAWTEvents
+specifyStreamHandler
+setProxySelector
+getProxySelector
+setCookieHandler
+getCookieHandler
+setResponseCache
+getResponseCache
+createClassLoader
+accessDeclaredMembers
+modifyThread
+modifyThreadGroup
+getProtectionDomain
+getClassLoader
+stopThread
+getStackTrace
+createAccessControlContext
+getDomainCombiner
+getPolicy
+listen
+localhost:1024-
+doAs
+doAsPrivileged
+invalid host/port: 
+invalid port range: 
+*
+*.
+invalid host wildcard specification
+invalid actions mask
+String index out of range: 
+For input string: "
+"
+No match available
+Index: 
+, Size: 
+Stream closed
+Cannot reflectively create enum objects
+some string
+whatever' OR '1' = '1
+dbadmin
+USER PROVIDES "
+" FOR KEY "
+Illegal repetition
+Illegal repetition range
+Unclosed counted closure
+offset out of bounds
+: 
+Illegal load factor: 
+Illegal initial capacity: 
+(?:
+)
+Empty character family
+Unclosed character family
+In
+Is
+Illegal Capacity: 
+Invalid index
+Invalid position
+Wrong data length
+Dictionary version(
+) is unsupported
+.<init>
+createLoginContext
+createLoginContext.*
+\.
+fromIndex(
+) > toIndex(
+toIndex = 
+fromIndex = 
+No such group yet exists at this point in the pattern
+Illegal/unsupported escape squence
+negative shift count
+Illegal control escape sequence
+access
+SUBSYSTEM RECEIVES:
+Unexpected internal error
+Unmatched closing ')'
+radix 
+ greater than Character.MAX_RADIX
+ less than Character.MIN_RADIX
+null
+Unsafe
+AccessControlContext invoking the Combiner
+Unknown character category {
+localhost
+:
+::
+Ambiguous hostport part
+[
+]
+}
+Invalid substring range
+|
+ >= 
+Clone not supported: 
+invalid permission: 
+action can't be empty
+action can't be null
+Self-causation not permitted
+Can't overwrite cause
+Class 
+ can not access a member of class 
+ with modifiers "
+Array index out of range: 
+Illegal Unicode escape sequence
+Illegal octal escape sequence
+-2147483648
+The field DataManipulate in this Trie is null
+Unclosed character class
+invalid port range
+disparate values
+Illegal Load: 
+public 
+protected 
+private 
+abstract 
+static 
+final 
+transient 
+volatile 
+synchronized 
+native 
+strictfp 
+interface 
+Unexpected character '
+Illegal character range
+Unknown character family {
+Null character family.
+in
+ji
+iw
+Illegal hexadecimal escape sequence
+timeout value is negative
+Cannot instantiate node
+name can't be empty
+name can't be null
+Can't find resource for bundle 
+, key 
+Index out of bounds!
+Bad class syntax
+Invalid code point:
+-9223372036854775808
+impl.prefix
+java.net.
+Cannot access class: java.net.
+: check impl.prefix property 
+in your properties file.
+Could not instantiate: java.net.
+Class not found: java.net.
+System property impl.prefix incorrect
+(
+, 
+zero value
+%
+user.language
+user.region
+user.country
+user.variant
+Unknown look-behind group
+Look-behind group does not have an obvious maximum length
+Unknown group type
+Unclosed group
+Internal logic error
+Unknown inline modifier
+internal error in Node dup()
+Inet4AddressImpl
+Inet6AddressImpl
+Illegal class name 
+.
+Can not call newInstance() on the Class for java.lang.Class
+addr is of illegal length
+<all permissions>
+all           turn on all debugging
+access        print all checkPermission results
+combiner      SubjectDomainCombiner debugging
+jar           jar verification
+logincontext  login context results
+policy        loading and granting
+provider      security provider debugging
+scl           permissions SecureClassLoader assigns
+The following can be used with access:
+stack     include stack trace
+domain    dumps all domains in context
+failure   before throwing exception, dump stack
+          and domain that didn't have permission
+Note: Separate multiple options with a comma
+WordDictionary
+WordData
+Unsupported version(
+Wrong magic number
+Wrong header length
+Dangling meta character '
+no scope_id found
+sun.text.resources.BreakIteratorInfo
+BreakIteratorClasses
+RuleBasedBreakIterator
+DictionaryBasedBreakIterator
+Invalid break iterator class "
